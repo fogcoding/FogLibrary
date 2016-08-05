@@ -1,4 +1,4 @@
-Personal Study Library Collection
+Personal Library
 =================================
 ### 模块区分：
 #### 文档编辑：
