@@ -6,3 +6,4 @@ Personal Library
 
 #### QuestionAndSolution:
 * [RecyclerView适配时无法实现满屏](https://github.com/fogcoding/FogLibrary/blob/master/QuestionAndSolution/RecyclerView%E6%97%A0%E6%B3%95%E6%BB%A1%E5%B1%8F.md)
+* [遇到的Fragment相关问题](https://github.com/fogcoding/FogLibrary/blob/master/QuestionAndSolution/Fragment%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.md)
