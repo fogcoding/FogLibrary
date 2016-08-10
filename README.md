@@ -3,7 +3,6 @@ Personal Library
 ## 模块区分：
 ### [Anddroid工程师基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge)
 * [Java部分基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
-
 > * [Java基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
 > * [Java高级特性](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/Advanced-Features) 
 
