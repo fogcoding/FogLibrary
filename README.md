@@ -2,6 +2,12 @@ Personal Library
 =================================
 ## 模块区分：
 ### [Anddroid工程师基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge)
+* [编程基础](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software)
+> * [算法设计](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Algorithm)
+> * [编译原理](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Compilling-Rule)
+> * [数据结构](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Data-structure)
+> * [设计模式](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Design-patterns)
+
 * [Java部分基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
 > * [Java基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
 > * [Java高级特性](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/Advanced-Features) 
