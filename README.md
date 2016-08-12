@@ -10,7 +10,8 @@ Personal Library
 
 * [Java部分基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
 > * [Java基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module)
-> * [Java高级特性](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/Advanced-Features) 
+> * [Java高级特性](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/Advanced-Features)
+> * [JVM相关](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/JVM-mechanism)
 
 * [Android基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android)
 > * [四大组件](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Four-major-Components) 
