@@ -16,7 +16,7 @@ Personal Library
 * [Android基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android)
 > * [四大组件](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Four-major-Components) 
 > * [五大布局](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Five-major-Layout)
-> * [View]()
+> * [View](https://github.com/fogcoding/FogLibrary/new/master/Basic-Knowledge/Basic-knowledge-of-Android/View)
 > * [Animation](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Animation)
 > * [Database](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Android-Database)
 > * [Internet Proframming](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Android-Internet-Programming)
