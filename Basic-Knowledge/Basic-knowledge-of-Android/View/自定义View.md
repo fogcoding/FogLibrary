@@ -3,7 +3,8 @@
 > 一个View的形成过程最重要的是三步：
 > > * 在OnMeasure（）方法中，测量View大小，使View能够自适应布局各种各样的需求
 > > * 在OnDraw（）方法中，通过Canvas与Paint来绘制View要显示的内容
-> > * 在OnLayout（）方法中来确定View的显示位置
+> > * 在OnLayout（）方法中来确定View的显示位置  
+
 > 这三个方法是View的运行基本原理，也是我们能够自定义控件的途径（通过继承View,重写这三个方法来实现）
 
 
