@@ -9,4 +9,4 @@
 选择目标DPI的种类，完成创建。
 ##### 注：不能在drawable文件下直接创建，否则无法通过R.drawable.x 引用
 
-REF： [Stackoverflow-Drable Folder :How to put image for multiple DPI?](http://stackoverflow.com/questions/29294287/android-studio-drawable-folder-how-to-put-images-for-multiple-dpi?noredirect=1)
+REF： [Stackoverflow-Drawable Folder :How to put image for multiple DPI?](http://stackoverflow.com/questions/29294287/android-studio-drawable-folder-how-to-put-images-for-multiple-dpi?noredirect=1)
