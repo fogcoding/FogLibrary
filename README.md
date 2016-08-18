@@ -40,7 +40,7 @@ Personal Library
 > * [MVC,MVP,MVVM](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/MVC%2CMVP%2CMVVM.md)
 > * [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
 
-### [Android程序优化](https://github.com/fogcoding/FogLibrary/tree/master/Optimize)
+* [Android程序优化](https://github.com/fogcoding/FogLibrary/tree/master/Optimize)
 > * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
 
 ### 文档编辑：
