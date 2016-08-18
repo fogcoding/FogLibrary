@@ -40,18 +40,16 @@ Personal Library
 > * [MVC,MVP,MVVM](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/MVC%2CMVP%2CMVVM.md)
 > * [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
 
+### [Android程序优化](https://github.com/fogcoding/FogLibrary/tree/master/Optimize)
+> * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
+
 ### 文档编辑：
 * [MarkDown的语法规则](https://github.com/fogcoding/FogLibrary/blob/master/Syntax/MarkDown%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99.md)
 * [SQL语法规则](https://github.com/fogcoding/FogLibrary/blob/master/Syntax/SQL%E8%AF%AD%E6%B3%95.md)
 
 _________________________________________
 
-
-
-
 * [程序员素养](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/About-software-engineer)
-* [Android程序优化](https://github.com/fogcoding/FogLibrary/tree/master/Optimize)
-> * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
 
 ### 技术学习网站：
 * [伯乐在线](http://android.jobbole.com/)
