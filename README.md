@@ -34,6 +34,7 @@ Personal Library
 > * [屏幕适配原理和方法](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D%E5%8E%9F%E7%90%86%E5%92%8C%E6%96%B9%E6%B3%95.md)
 > * [OOM问题的解析和处理](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/OOM%E9%97%AE%E9%A2%98%E8%A7%A3%E6%9E%90%E5%92%8C%E5%A4%84%E7%90%86.md)
 > * [MVC,MVP,MVVM](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/MVC%2CMVP%2CMVVM.md)
+> * [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
 
 
 * [程序员素养](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/About-software-engineer)
