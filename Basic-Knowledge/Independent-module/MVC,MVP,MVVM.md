@@ -8,7 +8,7 @@
 ![](http://b.hiphotos.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=bbbc461aadd3fd1f2204aa6851274e7a/e824b899a9014c085731fd910f7b02087bf4f4f8.jpg)
 
 #### MVP 架构图1
-![MVP 架构图](http://img.blog.csdn.net/20151222102547306?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+![MVP 架构图](http://images2015.cnblogs.com/blog/951171/201608/951171-20160820152458484-547329987.png)
 
 #### MVP 架构图2
 ![](http://a.hiphotos.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0d3000fa9c25bc313f5009ca3fb6e6d4/8b82b9014a90f603534849733c12b31bb051ed0e.jpg)
