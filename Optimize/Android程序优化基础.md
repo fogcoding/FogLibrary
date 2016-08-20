@@ -10,13 +10,13 @@
 > * 1.ANR (Application not resoending)：   [ANR问题详解](http://www.cnblogs.com/purediy/p/3225060.html)
 > * 2.FC (Force close)：
 
-> > * 1. error ->程序代码有语法错误或逻辑运行错误
+> > * 1.error ->程序代码有语法错误或逻辑运行错误
 
-> > * 2. OOM   ->内存超过限额
+> > * 2.OOM   ->内存超过限额
 
 > > * 3.StackOverFlowError                -> 出现死循环或无线递归或无限运行的情况
 
-> > * 4.4.Runtime,常见于nullpoint Error   ->  - -！
+> > * 4.Runtime,常见于nullpoint Error   ->  - -！
 
 
 ### 具体优化要求：
