@@ -1,5 +1,6 @@
 ### [Android data binding 一 - 详细介绍和使用](http://blog.csdn.net/zhixuan322145/article/details/51817207)
 ### [Android data binding - Binding与Observer实现原理](http://blog.csdn.net/zhixuan322145/article/details/51897272)
+### [数据绑定用户指南](http://www.jianshu.com/p/b1df61a4df77)
 
 #### 个人笔记：
 > data binding 是希望简化数据与View绑定这一繁琐重复的工作而诞生的，在设计视图的同时就将各种数据绑定了View
