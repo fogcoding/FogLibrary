@@ -77,18 +77,28 @@ public List pullElement(int number,List document,List result){
     }
 }
 
+
+
+
+
+//最终待检测实际应用的方法
+//这个方法需要循环0～n的元素个数的调用
 public void flagArray(int n){
-    List list = new List(n);        //这里需要每个元素赋值为0
-    while(list.get(0) != document.length-n-1){
+    List list = new List(n);        //这里需要每个元素赋值为0（默认创建时即为0）
+    //当引用数组的首位，不等于document.size()-n-1则一直执行
+    while(list.get(0) != document.size()-n-1){
         int i=list.length;
+        //将引用数组最后一位执行++操作
         int temp = list.get(i)++;
         list.add(i;temp);
-        if(list.get(i) < document.size()){
+        //当数组的最后一位数值不超过document.size()时，执行一遍解析操作，否则将最后一位数值置0，前一位+1，层层进位，
+        //最终会导致首元素的值==ducument-n-1跳出整个遍历
+        if(list.get(i) =< document.size()-1){
             //按照数组信息读取对应的组合
             parsingArray();
         }else{
             int j = i;
-            while(list.get(j--) >= document.size()){
+            while(list.get(j--) >= document.size-1){
               list.add(j,0);
               int temp1 = list.get(j)++;
               list.add(j,temp1);
