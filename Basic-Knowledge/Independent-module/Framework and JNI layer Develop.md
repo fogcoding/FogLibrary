@@ -5,10 +5,10 @@
 * 有许多原本已经用C/C++实现的功能逻辑，可以通过JNI直接调用，避免重写
 * APK文件可以进行反编译的缺陷，不利于程序的安全性，但通过JNI调用的方法，使得代码分为几个模块，不同语言，大大提升了程序的安全性
 
-#### 实现方法：
+#### 实现方法和原理：
 ![](http://a.hiphotos.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=f652ae8d7cd98d1062d904634056d36b/34fae6cd7b899e51d73c026542a7d933c8950d14.jpg)
 
-[REF：JNI示例](http://www.cnblogs.com/wzben/p/5733571.html)
+[REF：呕心沥血Android studio使用JNI实例 - wzben ](http://www.cnblogs.com/wzben/p/5733571.html)
 
 错误警示或备忘：
 * NDK的下载可以直接在Android studio里面的project structure里面操作 （解压操作会在一个叫wanrouter.h的文件中卡住相当长的时间，不要取消）
