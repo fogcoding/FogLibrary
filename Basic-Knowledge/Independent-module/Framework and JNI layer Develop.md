@@ -17,10 +17,11 @@
 * JNI的SO文件是可以自动生成的，需要将SO文件复制到jniLIB才能顺利执行
 > 但C文件较少自动是方便和优秀的，但是但C语言需要实现的模块和功能很多，自动生成的文件就会难以操作和管理，此时需要使用gradle配置来管理
 代码：
-`android {`  
-`       sourceSets {`  
-`           main {`  
-`             jni.srcDirs = []`  
-`               }`  
-`       }`  
-`}`  
+
+>`android {`  
+>`       sourceSets {`  
+>`           main {`  
+>`             jni.srcDirs = []`  
+>`               }`  
+>`       }`  
+>`}`  
