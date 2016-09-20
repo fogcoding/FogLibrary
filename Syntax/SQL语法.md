@@ -7,12 +7,25 @@
 ####[大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
 
 ---
-### 新建
+## 1.对数据表的操作 
+#### 新建数据表
 
 `sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS PERSON"+"(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,age INTEGER,sex TEXT)");`
 
+#### 删除数据表
+* 删除指定数据表
+
+#### 更新数据库
+* 在表格里增加一列
+
+`db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
+
+* 在表格里删除一列
+
+
 ---
-### 增加
+## 2.对表格数据的操作
+#### 增加
 * 使用SQL语句操作
 
 `"INSERT INTO PERSON VALUES(NULL,?,?,?)",new Object[]{}`
@@ -23,12 +36,12 @@
 `
 
 ---
-### 删除
+#### 删除
 
 `db.delete("person", "age < ?", new String[]{"35"});`
 
 ---
-### 修改
+#### 修改
 
 `db.update(String table, Contentvalues values, String whereClause, String whereArgs);  `
 
@@ -37,7 +50,7 @@
 `db.update("person", cv, "name = ?", new String[]{person.name});  `
 
 ---
-### 查询
+#### 查询
 * 使用SQL语句操作
 
 `cursor = temp.rawQuery("SELECT * FROM PERSON WHERE age >= ?",new String[]{"8"});`
@@ -79,8 +92,4 @@
 * c.getColumnIndex(String columnName);//返回某列名对应的列索引值  
 * c.getString(int columnIndex);   //返回当前行指定列的值  
 
----
-### 更新数据库
 
-`db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
- 
