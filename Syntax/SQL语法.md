@@ -2,12 +2,16 @@
 #### 特点：
 * 在所有数据库的操作中是通用的，依靠基本的SQL语法可以完成绝大部分的操作，相当简便
 * 语义清晰明了，易于记忆和使用
-* 对大小写敏感 [大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
+* 对大小写敏感 
 
+####[大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
+
+---
 ### 新建
 
 `sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS PERSON"+"(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,age INTEGER,sex TEXT)");`
 
+---
 ### 增加
 * 使用SQL语句操作
 
@@ -18,10 +22,12 @@
 `db.insert(String table, String nullColumnHack, ContentValues values);  
 `
 
+---
 ### 删除
 
 `db.delete("person", "age < ?", new String[]{"35"});`
 
+---
 ### 修改
 
 `db.update(String table, Contentvalues values, String whereClause, String whereArgs);  `
@@ -30,6 +36,7 @@
 
 `db.update("person", cv, "name = ?", new String[]{person.name});  `
 
+---
 ### 查询
 * 使用SQL语句操作
 
@@ -72,7 +79,7 @@
 * c.getColumnIndex(String columnName);//返回某列名对应的列索引值  
 * c.getString(int columnIndex);   //返回当前行指定列的值  
 
-
+---
 ### 更新数据库
 
 `db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
