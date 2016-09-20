@@ -2,32 +2,39 @@
 #### 特点：
 * 在所有数据库的操作中是通用的，依靠基本的SQL语法可以完成绝大部分的操作，相当简便
 * 语义清晰明了，易于记忆和使用
-
-### 相关问题
-* 区分大小写的问题
-* select语句的new Object[] 相关问题
+* 对大小写敏感 [大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
 
 ### 新建
+
 `sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS PERSON"+"(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,age INTEGER,sex TEXT)");`
 
 ### 增加
 * 使用SQL语句操作
+
 `"INSERT INTO PERSON VALUES(NULL,?,?,?)",new Object[]{}`
+
 * 使用Android辅助类操作
+
 `db.insert(String table, String nullColumnHack, ContentValues values);  
 `
 
 ### 删除
+
 `db.delete("person", "age < ?", new String[]{"35"});`
 
 ### 修改
+
 `db.update(String table, Contentvalues values, String whereClause, String whereArgs);  `
+
 * 示例代码：
+
 `db.update("person", cv, "name = ?", new String[]{person.name});  `
 
 ### 查询
 * 使用SQL语句操作
+
 `cursor = temp.rawQuery("SELECT * FROM PERSON WHERE age >= ?",new String[]{"8"});`
+
 * 使用Android辅助类操作
 
 `db.rawQuery(String sql, String[] selectionArgs);  `
@@ -37,6 +44,7 @@
 `db.query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy, String limit);`  
 
 `db.query(String distinct, String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy, String limit); `
+
 * columns表示要查询的列所有名称集
 * selection表示WHERE之后的条件语句，可以使用占位符，
 * groupBy指定分组的列名，
@@ -66,5 +74,6 @@
 
 
 ### 更新数据库
+
 `db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
  
