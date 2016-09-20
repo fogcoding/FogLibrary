@@ -14,6 +14,8 @@
 
 #### 删除数据表
 * 删除指定数据表
+ 
+`drop table tableName`
 
 #### 更新数据库
 * 在表格里增加一列
@@ -21,6 +23,8 @@
 `db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
 
 * 在表格里删除一列
+
+`ALTER TABLE TableName DROP BPLACE CASCADE`
 
 
 ---
@@ -32,8 +36,7 @@
 
 * 使用Android辅助类操作
 
-`db.insert(String table, String nullColumnHack, ContentValues values);  
-`
+`db.insert(String table, String nullColumnHack, ContentValues values);`
 
 ---
 #### 删除
