@@ -48,6 +48,25 @@
 
 `db.update(String table, Contentvalues values, String whereClause, String whereArgs);  `
 
+> 修改操作的详解：
+
+> Contentvalues是用来存放需要修改的值的内容，而whereCluase是用来帮助寻找需要修改的位置的限定条件，whereArgs是用来给出具体的限定消减的内容
+
+> 下面是修改一个年龄为100岁的人的名字的代码：
+
+`ContentValues cv = new ContentValues();`
+
+`person person = new person();`
+
+`person.name = "testing successful!!!!";`
+
+`cv.put("name",person.name);`
+
+`temp.update("PERSON",cv,"age = ?",new String[]{"100"});`
+
+> 修改的内容存放在Contentvalues里面，而别的语句是用来帮助寻找具体修改位置的
+
+
 * 示例代码：
 
 `db.update("person", cv, "name = ?", new String[]{person.name});  `
