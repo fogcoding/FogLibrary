@@ -4,7 +4,10 @@
 * 语义清晰明了，易于记忆和使用
 * 对大小写敏感 
 
-####[大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
+###[大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
+
+### [SQL语句的示例教学](http://www.w3school.com.cn/sql/sql_select.asp)
+
 
 ---
 ## 1.对数据表的操作 
@@ -20,11 +23,11 @@
 #### 更新数据库
 * 在表格里增加一列
 
-`db.execSQL("ALTER TABLE person ADD COLUMN other STRING");  `
+`db.execSQL("ALTER TABLE person ADD column_name data_type");  `
 
 * 在表格里删除一列
 
-`ALTER TABLE TableName DROP BPLACE CASCADE`
+`ALTER TABLE TableName DROP cloumn_name CASCADE`
 
 
 ---
