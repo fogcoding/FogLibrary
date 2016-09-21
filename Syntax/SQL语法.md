@@ -62,7 +62,7 @@
 
 `cv.put("name",person.name);`
 
-`temp.update("PERSON",cv,"age = ?",new String[]{"100"});`
+`db.update("PERSON",cv,"age = ?",new String[]{"100"});`
 
 > 修改的内容存放在Contentvalues里面，而别的语句是用来帮助寻找具体修改位置的
 
