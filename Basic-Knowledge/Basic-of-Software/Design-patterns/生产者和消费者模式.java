@@ -2,20 +2,28 @@
 // 该模式特别需要注意线程同步问题
 
 class store{
+  private store instance;
   private int food;
+  
   public static void main(String arg){
-    producer producer = new producer();
-    store.get();
+    sotre = getinstance();
+    for(int i=0;;i++){
+      // 每次生产者生产的数量大于等于消费者的消费量，则可以一直支持下去
+      store.add(new producer().produce());
+      store.get(new consumer().get())
+      new Thread().sleep(2000);
+    }
     
     
   }
   
-  public static int getFood(){
-    if(food == null){
+  public static int getIntance(){
+    if(instance == null){
       food  = 0;
-      return food;
+      instance = new store();
+      return instance;
     }else{
-      return food;
+      return instance;
     }
   }
   
@@ -23,23 +31,26 @@ class store{
     this.food= this.food + food;
   }
   
-  public int get(int food){
-    
-    
+  //为了库存的线程安全，需要同步锁
+  public synchronized int get(int food){
+    if((this.food - food) > 0){
+      this.food = this.food - food;
+      return food;
+    }else{
+      return 0;
+    }
   }
   
 }
 
 class producer{
   public int produce(){
-    
-    
+    return 5;
   }
 }
 
 class consumer{
   public void get(){
-      
+    return 3;
   }
-  
 }
