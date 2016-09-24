@@ -50,7 +50,7 @@
 
 ---
 
- ### 查看提交历史 
+### 查看提交历史 
  * 基本操作： git log
  * 查看最近N次的提交： git log -p -N
  * 查看每次提交的简略统计信息： git log --stat
@@ -90,7 +90,7 @@
  
 ---
 
- ### 撤销操作
+### 撤销操作
  * 添加忘记提交的文件 git commit --amend
  * 取消文件添加进暂存区的操作 git reset HEAD file_name
  
