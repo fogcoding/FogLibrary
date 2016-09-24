@@ -3,10 +3,14 @@
 * [git官方教程英文版原文](https://git-scm.com/doc)
 * [git常用命令总结 - 圣骑士windy](http://www.cnblogs.com/mengdd/p/4153773.html)
 
+---
 
 ## 重点摘要
 
 ### git操作的三个区域
+![](https://git-scm.com/book/en/v2/book/02-git-basics/images/lifecycle.png)
+
+---
 
 ###  文件的状态控制
 
@@ -44,6 +48,8 @@
 
 * 文件改名
 > * git mv file_from file_to 将文件名字从file_from改为file_to
+
+---
 
  ### 查看提交历史 
  * 基本操作： git log
@@ -83,6 +89,8 @@
  
  * [更多的历史纪录查询信息](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2#limit_options) 
  
+---
+
  ### 撤销操作
  * 添加忘记提交的文件 git commit --amend
  * 取消文件添加进暂存区的操作 git reset HEAD file_name
@@ -94,6 +102,8 @@
  * 撤销对文件的修改 git checkout -- file 
 
 > 这是一个危险操作，因为你对该文件做的所有修改都会消失，而系统执行的任务就是重新从远程仓库拷贝一份该文件来覆盖他
+
+---
 
 ### 远程仓库的使用
 * 查看所有远程仓库信息： git remote
@@ -116,6 +126,8 @@
 > * git remote rename name_from name_to
 > * git remote rm res_name
 
+---
+
 ### 打标签
 * 查看标签： git tag
 * 搜索制定的标签： git tag -1 'v1.8.5*'
@@ -128,6 +140,8 @@
 > * 附注标签会保存提交者相对的完整信息，轻量标签信息更少
 
 > * 共享标签是因为push操作默认不提交标签内容
+
+--
 
 ### git指令修改
 * 更改指令方法: git config --global alias.修改后的内容 修改的指令
