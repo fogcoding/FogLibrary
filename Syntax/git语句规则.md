@@ -24,19 +24,19 @@
 
 > MM 修改过的文件 ，出现右边的M表示被修改过未放入暂存区，左边的M表示已经修改并放入暂存区，MM同时出现表示该文件修改了并放入暂存区后，又修改过
 
-* 忽略某些文件
+* 忽略某些文件: 在.gitignore文件中查看
 
 * 查看工作区域和暂存区域的文件之间的区别 git diff --staged(只显示暂存的改动，与提交过的文件无关)
 
-* 提交更新 commit
+* 提交更新 commit:
 
 > * 附带提交说明的指令： git commit -m "提交操作的说明信息"
 
-* 跳过暂存区域提交 git commit -a -m "提交操作的说明信息"
+> * 跳过暂存区域提交 git commit -a -m "提交操作的说明信息"   (此方法会越过git add file的操作，直接将所有被追踪的文件暂存起来一并提交)
 
-> * 此方法会越过git add file的操作，直接将所有被追踪的文件暂存起来一并提交
 
-* 删除文件 git rm
+
+* 删除文件 git rm:
 
 > * 文件彻底删除：使用git rm file_name删除了某个文件，下一次提交后该文件不再被追踪，但删除前曾将该文件放入暂存区，则必须使用 -f 来强制删除
 
@@ -46,8 +46,7 @@
 
 > * git rm \*~ 删除~结尾的所有文件
 
-* 文件改名
-> * git mv file_from file_to 将文件名字从file_from改为file_to
+* 文件改名: git mv file_from file_to (将文件名字从file_from改为file_to)
 
 ---
 
@@ -95,9 +94,9 @@
  * 添加忘记提交的文件 git commit --amend
  * 取消文件添加进暂存区的操作 git reset HEAD file_name
  
- >  添加--hard 后，该指令成为一个危险指令（可能使本地的相关文件也消除）， git reset --hard HEAD file_name
+ >  * 添加--hard 后，该指令成为一个危险指令（可能使本地的相关文件也消除）， git reset --hard HEAD file_name
  
- >  也可以倒退回上N次提交前的状态，git reset --hard HEAD~N
+ >  * 也可以倒退回上N次提交前的状态，git reset --hard HEAD~N
  
  * 撤销对文件的修改 git checkout -- file 
 
