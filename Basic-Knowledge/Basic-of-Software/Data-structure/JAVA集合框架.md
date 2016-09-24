@@ -22,8 +22,21 @@
 ### set 
 * HashSet 
 
+> * 底层数据是HashMap，只是操作的都是key，value的值恒为null
+
+> * hashset与数组相反，基于hash算法的实现方式，无法保存顺序
+
+> * 总结:HashSet就是给予hash算法存储的一对对没有值，只有key的HashMap
 
 * TreeSet 
+
+> * 底层数据是TreeMap，只是操作的都是key，value的值恒为null
+
+> * 同TreeMap一样，都是基于树实现，对象按升序存储，可以实现快速访问和检索
+
+> * 同TreeMap，存入的数据也要实现Comparable接口，提供排序方法
+
+> * 总结:TreeSet就是基于树的算法，存储的一对对没有值，只有key的TreeMap
 
 
 
@@ -31,14 +44,21 @@
 * Map.Entry 
 
 * HaspMap 
+
 > * 基于hash表的数据结构,Hashmap中是一对对<key,value>
+
 > * 而存储的方法是利用hash算法，计算f(key)，得到一个值，存在内存地址里的对应位置，但不同的key可能得到同样的hash值，这样的情况会把后放进去的<key,value>存放在对应的位置，先放进去的<k,v>以链表的形式存放在后面
+
 > * 由于按照hash值来存储,所以不能保留数据存放的先后顺序
+
 > * 总结来说，hashmap的数据结构就是数组加链表
 
 * TreeMap
+
 > * 基于红黑树实现的数据结构，不像hash映射，树映射保证元素是按照关键字的升序排列，所以可以实现快速检索
+
 > * 若是自定义的类存入TreeMap，那么该类需要实现Comparable接口，给出排序规则，是的红黑树算法可以实现
+
 > * 总结来说，就是将键值对的数据以红黑树的形式储存，并实现快速检索
 
 
