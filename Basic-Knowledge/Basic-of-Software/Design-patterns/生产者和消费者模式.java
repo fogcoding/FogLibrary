@@ -9,8 +9,11 @@ class store{
     sotre = getinstance();
     for(int i=0;;i++){
       // 每次生产者生产的数量大于等于消费者的消费量，则可以一直支持下去
-      store.add(new producer().produce());
-      store.get(new consumer().get())
+      producer producer = new producer();
+      consumer consumer = new new consumer();
+      
+      store.add(producer.produce());
+      store.get(consumer.get());
       new Thread().sleep(2000);
     }
     
