@@ -24,3 +24,9 @@
 * git commit -m "上传说明"
 * git pull res_name master
 * git push res_name master
+
+## 添加文件的追踪
+* git add file_name
+* git status    (可以看见文件追踪的变动情况)
+* git commit -m "提交说明"   (这一步特别注意，使用 git commit 是无法生效的，必须按照左边的格式提交)
+* git push res_name branch_name 
