@@ -1,6 +1,6 @@
 ## SQL语法
 
-## [SQL语句的示例教学](http://www.w3school.com.cn/sql/sql_select.asp)
+## [SQL语句的中文示例教学](http://www.w3school.com.cn/sql/sql_select.asp)
 
 
 #### 特点：
