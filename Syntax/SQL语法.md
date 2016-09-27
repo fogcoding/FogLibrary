@@ -1,13 +1,14 @@
 ## SQL语法
+
+## [SQL语句的示例教学](http://www.w3school.com.cn/sql/sql_select.asp)
+
+
 #### 特点：
 * 在所有数据库的操作中是通用的，依靠基本的SQL语法可以完成绝大部分的操作，相当简便
 * 语义清晰明了，易于记忆和使用
 * 对大小写敏感 
 
 ###[大小写敏感的解决办法](http://www.cnblogs.com/zhuawang/archive/2013/01/15/2861566.html)
-
-### [SQL语句的示例教学](http://www.w3school.com.cn/sql/sql_select.asp)
-
 
 ---
 ## 1.对数据表的操作 
