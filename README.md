@@ -24,7 +24,6 @@ Personal Library
 ### Android进阶
 
 * Android运行机制和原理
-
 > * [Android系统框架和运行机制](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Android-Framework-and-operation-mechanism)
 
 * [Database](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Database)
@@ -33,9 +32,7 @@ Personal Library
 > * [Android原生可用于实现数据存储的方式](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/Android%E5%8E%9F%E7%94%9F%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%9A%84%E6%96%B9%E5%BC%8F.md)
 
 * [快速开发之第三方库]
-
 > * [Data binding](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Data%20bind
-
 > * [Materrial Design](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Material%20Design.md)
 
 
@@ -47,10 +44,7 @@ ing.md)
 > * [WEB APP](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/WEB%20APP.md)
 
 * [Android程序优化](https://github.com/fogcoding/FogLibrary/tree/master/Optimize)
-
 > * [MVC,MVP,MVVM](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/MVC%2CMVP%2CMVVM.md)
-
-
 > * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
 
 * 版本控制
