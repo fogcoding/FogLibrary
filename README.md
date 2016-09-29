@@ -22,23 +22,30 @@ Personal Library
 > * [widget](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/widget)
 > * [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
 
-### Android进阶
-
-* Android运行机制和原理
-> * [Android系统框架和运行机制](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Android-Framework-and-operation-mechanism)
-
 * [Database](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Database)
 > * [SQLite](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/SQLite.md)
 > * [SQL，MySQL，Oracle](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/SQL%2CMySQL%2COracle.md)
 > * [Android原生可用于实现数据存储的方式](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/Android%E5%8E%9F%E7%94%9F%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%9A%84%E6%96%B9%E5%BC%8F.md)
 
+### Android进阶
+
+* [Android运行机制和原理]
+> * [Android系统框架和运行机制](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Android-Framework-and-operation-mechanism)
+
 * [快速开发之第三方库]
-> * [Data binding](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Data%20bind
+> * [Data binding](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Data%20binding.md)
 > * [Materrial Design](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Material%20Design.md)
+> * [Rxjava]()
+> * [Retrofit]()
+> * [Glide]()
+> * [Logger]()
+> * [Dagger2]()
+> * [pullToRefresh]()
+
 
 
 * [独立模块](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Independent-module) 
-ing.md)
+
 > * [Framework layer and JNI develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Framework%20and%20JNI%20layer%20Develop.md)
 > * [HAL layer Develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/HAL%20layer%20develop.md)
 > * [React Native](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/React%20Native.md)
