@@ -20,6 +20,7 @@ Personal Library
 > * [Animation](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Animation)
 > * [Internet Proframming](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Android-Internet-Programming)
 > * [widget](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/widget)
+> * [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
 
 ### Android进阶
 
@@ -75,4 +76,4 @@ _________________________________________
 * [恢复被误删除的源代码文件](https://github.com/fogcoding/FogLibrary/blob/master/QuestionAndSolution/%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E9%99%A4%E7%9A%84%E6%BA%90%E4%BB%A3%E7%A0%81%E6%96%87%E4%BB%B6.md)
 * [屏幕适配原理和方法](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D%E5%8E%9F%E7%90%86%E5%92%8C%E6%96%B9%E6%B3%95.md)
 * [OOM问题的解析和处理](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/OOM%E9%97%AE%E9%A2%98%E8%A7%A3%E6%9E%90%E5%92%8C%E5%A4%84%E7%90%86.md)
-* [多线程编程](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B.md)
+
