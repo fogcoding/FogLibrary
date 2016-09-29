@@ -2,6 +2,7 @@ Personal Library
 =================================
 ## 模块区分：
 ### [Anddroid工程师基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge)
+* [程序员素养](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/About-software-engineer)
 * [编程基础](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software)
 > * [算法设计](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Algorithm)
 > * [编译原理](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-of-Software/Compilling-Rule)
@@ -46,7 +47,6 @@ Personal Library
 
 
 * [独立模块](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Independent-module) 
-
 > * [Framework layer and JNI develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Framework%20and%20JNI%20layer%20Develop.md)
 > * [HAL layer Develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/HAL%20layer%20develop.md)
 > * [React Native](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/React%20Native.md)
@@ -56,7 +56,7 @@ Personal Library
 > * [MVC,MVP,MVVM](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/MVC%2CMVP%2CMVVM.md)
 > * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
 
-* 版本控制
+* [版本控制]()
 > * [基本的git命令操作记录](https://github.com/fogcoding/FogLibrary/blob/master/VCS/git%E6%8E%A7%E5%88%B6%E7%89%88%E6%9C%AC%E7%9A%84%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95.md) 
 
 ### 文档编辑：
@@ -65,8 +65,6 @@ Personal Library
 * [git语法规则](https://github.com/fogcoding/FogLibrary/blob/master/Syntax/git%E8%AF%AD%E5%8F%A5%E8%A7%84%E5%88%99.md)
 
 _________________________________________
-
-* [程序员素养](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/About-software-engineer)
 
 ### 技术学习网站：
 * [伯乐在线](http://android.jobbole.com/)
