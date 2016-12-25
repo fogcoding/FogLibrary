@@ -2,9 +2,7 @@
 ### 启动入口：
 * 启动目录需要设置bin目录下的git.exe为启动程序，不是gitcmd.exe
 * 为了能够在任何目录使用git命令，需要在环境变量里面设置git.exe的路径。
-* * 配置好了使用cmd窗口可以任何目录使用git命令，但在Android stduio的terminal使用却无法识别，此时重启电脑一下就好了
-
-## 身份验证设置：
+* 配置完使用cmd窗口可以任何目录使用git命令，如果在Android stduio的terminal使用却无法识别，此时重启电脑一下就好了
 
 ### 用于提供自己的名字和email地址
 * git config --global user.name [name]
