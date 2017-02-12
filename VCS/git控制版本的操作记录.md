@@ -9,7 +9,7 @@
 * git config --global user.email []
 
 ### 保存登陆的用户密码，避免每次都要重新输入
-* git config --gloable credential.helper store
+* git config --global credential.helper store
 
 ### 查看配置信息列表
 * git config --list
