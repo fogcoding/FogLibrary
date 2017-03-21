@@ -15,7 +15,7 @@ Personal Library
 > * [JVM相关](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Java-module/JVM-mechanism)
 
 * [Android基础知识](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android)
-> * [四大组件](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Four-major-Components) 
+> * [四大组件](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Four-major-Components)
 > * [五大布局](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Five-major-Layout)
 > * [View](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/View)
 > * [Animation](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Basic-knowledge-of-Android/Animation)
@@ -27,6 +27,7 @@ Personal Library
 > * [SQLite](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/SQLite.md)
 > * [SQL，MySQL，Oracle](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/SQL%2CMySQL%2COracle.md)
 > * [Android原生可用于实现数据存储的方式](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Database/Android%E5%8E%9F%E7%94%9F%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%9A%84%E6%96%B9%E5%BC%8F.md)
+
 
 ### Android进阶
 
@@ -46,7 +47,7 @@ Personal Library
 
 
 
-* [独立模块](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Independent-module) 
+* [独立模块](https://github.com/fogcoding/FogLibrary/tree/master/Basic-Knowledge/Independent-module)
 > * [Framework layer and JNI develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/Framework%20and%20JNI%20layer%20Develop.md)
 > * [HAL layer Develop](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/HAL%20layer%20develop.md)
 > * [React Native](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/React%20Native.md)
@@ -57,7 +58,7 @@ Personal Library
 > * [Android程序优化基础](https://github.com/fogcoding/FogLibrary/blob/master/Optimize/Android%E7%A8%8B%E5%BA%8F%E4%BC%98%E5%8C%96%E5%9F%BA%E7%A1%80.md)
 
 * [版本控制]()
-> * [基本的git命令操作记录](https://github.com/fogcoding/FogLibrary/blob/master/VCS/git%E6%8E%A7%E5%88%B6%E7%89%88%E6%9C%AC%E7%9A%84%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95.md) 
+> * [基本的git命令操作记录](https://github.com/fogcoding/FogLibrary/blob/master/VCS/git%E6%8E%A7%E5%88%B6%E7%89%88%E6%9C%AC%E7%9A%84%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95.md)
 
 ### 文档编辑：
 * [MarkDown的语法规则](https://github.com/fogcoding/FogLibrary/blob/master/Syntax/MarkDown%E7%9A%84%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99.md)
@@ -82,4 +83,3 @@ _________________________________________
 * [恢复被误删除的源代码文件](https://github.com/fogcoding/FogLibrary/blob/master/QuestionAndSolution/%E6%81%A2%E5%A4%8D%E8%AF%AF%E5%88%A0%E9%99%A4%E7%9A%84%E6%BA%90%E4%BB%A3%E7%A0%81%E6%96%87%E4%BB%B6.md)
 * [屏幕适配原理和方法](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D%E5%8E%9F%E7%90%86%E5%92%8C%E6%96%B9%E6%B3%95.md)
 * [OOM问题的解析和处理](https://github.com/fogcoding/FogLibrary/blob/master/Basic-Knowledge/Independent-module/OOM%E9%97%AE%E9%A2%98%E8%A7%A3%E6%9E%90%E5%92%8C%E5%A4%84%E7%90%86.md)
-
