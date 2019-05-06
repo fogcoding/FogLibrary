@@ -4,22 +4,164 @@
 public class SingleTon(){
 
   private static SignleTon Instance = null;
-  
+
   public SingleTon(){}
-  
+
   public staic SingleTon getInstance(){
     if(Instance == null){
       Instance = new SingleTon();
     }
     return Instance;
-  
+
   // 注：这样的写法并不能完全保证单例或者全局变量的数据同步
   // 不能保证的原因：
   // 在多线程情况下，多个线程同时访问该静态方法获取实例对象
   // 在多线程情况下，多个线程同时对该实例对象进行数据操作
+  }
+
+/*
+基本思路：
+1.类的构造方法定义为私有方法，这样非本类对象就无法通过构造器获取对象实例，
+只能通过getInstance()的静态方法获取，实现单例控制
+2.通过一个静态方法获取对象，空就创建对象，非空就返回对象
+
+问题：
+在多线程的环境下，可能出现几个线程同时访问单例，而各自创建了一个单例对象，
+违反了单例的要求
+
+*/
+
+/*
+首先需要理解这些方法的区别需要一个基本信息，就是类加载的执行顺序：
+1.父类静态属性
+2.父类静态块
+3.子类静态属性
+4.子类静态块
+5.父类常量属性
+6.父类代码块
+7.父类构造方法
+8.子类常量属性
+9.子类代码块
+10.子类构造方法
+*/
+
+
+  //饿汉式(静态常量)
+  public class SingleTon{
+    //利用类加载顺序，在其他对象操作之前就完成单例的初始化
+    private final static SingleTon Instance = new SingleTon();
+
+    private SingleTon(){}
+
+    public static SingleTon getInstance(){
+      return Instance;
+    }
 
   }
 
+  //饿汉式(静态代码块)
+  public class SingleTon{
+    private final static SingleTon Instance;
+    //与上面原理相同，都是利用类加载顺序，在其他对象操作之前就完成单例的初始化
+    static {
+      Instance = new SingleTon();
+    }
 
+    private SingleTon(){}
+
+    public static SingleTon getInstance(){
+      return Instance;
+    }
+
+  }
+
+    //懒汉式(线程不安全)
+    public class SingleTon{
+      private static SingleTon Instance;
+
+      private SingleTon(){}
+
+      //这样的写法由于在多线程环境下是完全失效的，但是在单线程下是可行的
+      //并且因为没有添加任何的限制条件，所以这个方法的效率是顶级的
+      public static SingleTon getInstance(){
+        if(Instance == null){
+          Instance = new SingleTon();
+        }
+        return Instance;
+      }
+
+    }
+
+      //懒汉式(线程安全)
+      public class SingleTon{
+        private static SingleTon Instance;
+
+        private SingleTon(){}
+
+        //为了在多线程的条件下保证单例，对上面方法做的改进
+        //synchronized虽然会降低效率，但保证了线程安全，也是一种场景的适用方法
+        public static synchronized SingleTon getInstance(){
+          if(Instance == null){
+            Instance = new SingleTon();
+          }
+          return Instance;
+        }
+
+      }
+
+
+      //懒汉式(线程安全)
+      public class SingleTon{
+        private static SingleTon Instance;
+
+        private SingleTon(){}
+
+        //与上面的方法类似，上面的写法是对每个访问这个方法的对象加锁
+        //这样的写法是对每个SingkeTon的实例化对象加锁
+        public static SingleTon getInstance(){
+          if(Instance == null){
+            synchronized (SingleTon.class){
+              Instance = new SingleTon();
+            }
+          }
+          return Instance;
+        }
+
+      }
+
+      //双重检查(推荐)
+      //上面两种方法的结合体，显而易见
+      public class SingleTon{
+        private static volatile SingleTon Instance;
+
+        private SingleTon(){}
+
+        public static SingleTon getInstance(){
+          if(Instance == null){
+            synchronized (SingleTon.class){
+              if(Instance == null){
+                Instance = new SingleTon();
+              }
+            }
+          }
+          return Instance;
+        }
+
+      }
+
+      //静态内部类（推荐）
+      //利用内部类对外隐藏单例的信息，并通过类加载过程实现单例加载
+      public class SingleTon{
+        private SingleTon(){}
+
+        private staic class SingleTonInstance(){
+          private static final SingleTon Instance = new SingleTon();
+        }
+
+        public static SingleTon getInstance(){
+          return SingleTonInstance.Instance;
+        }
+
+      }
 
 }

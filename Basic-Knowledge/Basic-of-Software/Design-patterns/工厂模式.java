@@ -12,30 +12,30 @@ class Product{
     //获得第二个工厂的产品
     K k = human.get(new Factory2);
   }
-  
+
   public D get(T factory){
     return factory.provide();
   }
-  
+
 }
 
 class Factory1{
   private String product = "工厂一的产品";
-  
+
   public String provide(){
     return product;
   }
-  
+
 }
 
 class Factory2{
   //工厂二的产品
   private int product = 20;
-  
+
   public int provide(){
     return product;
   }
-  
+
 }
 
 
@@ -58,9 +58,3 @@ class tiger implments Factory{
     return new "虎骨酒";
   }
 }
-
-
-
-
-
-
