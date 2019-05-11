@@ -1,6 +1,4 @@
 
-// REF： 八种单例模式的写法对比 http://tianweili.github.io/blog/2015/03/02/singleton-pattern/
-
 public class SingleTon(){
 
   private static SignleTon Instance = null;

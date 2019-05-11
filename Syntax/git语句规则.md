@@ -40,13 +40,13 @@
 
 ---
 
-## 查看提交历史 
+## 查看提交历史
 #### 基本操作： git log
 #### 查看最近N次的提交： git log -p -N
 #### 查看每次提交的简略统计信息： git log --stat
 #### 自行设定显示信息的格式： git log --pretty=format"%h - %an,%ar : %s"
 
-| 格式符 | 意义     | 
+| 格式符 | 意义     |
 | ----- |:---------:|
 |  %H   | 提交对象（commit）的完整哈希字串          |
 |  %h   | 提交对象的简短哈希字串       |
@@ -63,18 +63,38 @@
 |  %cd  | 提交日期                |
 |  %cr  | 提交日期，按多久以前的方式显示  |
 |  %s   | 提交说明                |
- 
- * [更多的历史纪录查询信息](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2#limit_options) 
- 
+
+ * [更多的历史纪录查询信息](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2#limit_options)
+
 ---
 
 ## 撤销操作
 #### 添加忘记提交的文件 git commit --amend
+
+```
+快捷操作：
+
+1，修改最近一次的commit 信息
+
+　　git commit --amend
+
+　　然后就会进入vim编辑模式
+
+2，比如要修改的commit是倒数第三条，使用下述命令：
+
+　　git rebase -i HEAD~3
+3， 退出保存 :wq
+4，执行 git rebase --continue
+5，执行 git push -f 推送到服务端。
+
+```
+
+
 #### 取消文件添加进暂存区的操作 git reset HEAD file_name
 * 添加--hard 后，该指令成为一个危险指令（可能使本地的相关文件也消除）， git reset --hard HEAD file_name
 * 也可以倒退回上N次提交前的状态，git reset --hard HEAD~N
- 
-#### 撤销对文件的修改 git checkout -- file 
+
+#### 撤销对文件的修改 git checkout -- file
 * 这是一个危险操作，因为你对该文件做的所有修改都会消失，而系统执行的任务就是重新从远程仓库拷贝一份该文件来覆盖他
 
 ---
@@ -83,7 +103,7 @@
 #### 查看所有远程仓库信息： git remote
 #### 查看远程仓库的简写及其URL： git remote -v
 #### 添加远程仓库： git remote add res_name URL
-####  从远程仓库领取： 
+####  从远程仓库领取：
 * git fetch res_name   仅仅拉取远程仓库有，而自己没有的文件，并且不会执行合并或修改当前的工作内容，需要手动合并
 * git pull res_name   通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支。
 
@@ -101,7 +121,7 @@
 ## 打标签
 #### 查看标签： git tag
 #### 搜索制定的标签： git tag -1 'v1.8.5*'
-#### 创建附注标签： git tag -a v1.8 -m "标签说明内容" 
+#### 创建附注标签： git tag -a v1.8 -m "标签说明内容"
 #### 创建轻量标签： git tag note_name
 #### 查看标签信息与提交信息： git show v1.8
 #### 后期追加标签： git tag -a v1.8 commit_hash_values
