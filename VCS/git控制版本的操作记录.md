@@ -46,3 +46,7 @@
 * git status    (可以看见文件追踪的变动情况)
 * git commit -m "提交说明"   (这一步特别注意，不知道为什么，使用 git commit 是无法生效的，必须按照左边的格式提交)
 * git push res_name branch_name 
+
+## 删除远程分支
+* git origin --delete branch_name
+
