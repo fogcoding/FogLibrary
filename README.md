@@ -1,4 +1,4 @@
-## 重构个人笔记
+## 个人笔记
 
 #### note: 
 
@@ -10,13 +10,36 @@
 
 ​		由于笔记记录工具的更新和浏览github的工具更新，我选择了一种很方便的电子版笔记记录方式以及网络浏览工具。
 
-​	记录的工具是typora，一款可以实时渲染markdown语法的编辑器，着重于内容，排版非常方便。
+​	记录的工具是typora，一款可以实时渲染markdown语法的编辑器，着重于内容，排版美观方便，大大提升了记笔记的效率，并且可以导出各种格式。
 
 ​	阅读本项目的工具是Octotree,chrome浏览器的一个拓展程序，程序员浏览github的无上神器。
 
 
 
-​	如果您是同行并且有阅读本项目内容的意愿，您可以试试安装Octotree（可能需科学上网），安装完成后，您会看到如下面的界面，可以随意点击跳转对应的文章。
+​	如果您是同行并且有阅读本项目内容的意愿，您可以试试安装Octotree（可能需科学上网），安装完成后，您会看到如下面的左侧界面，可以随意点击跳转对应的文章。
 
-![Octotree展示图](https://github.com/fogcoding/FogLibrary/blob/master/res/images/Octotree%E7%A4%BA%E4%BE%8B.jpg?raw=true)
+![](https://github.com/fogcoding/FogLibrary/blob/master/res/images/Octotree%E7%A4%BA%E4%BE%8B.jpg?raw=true)
+
+
+
+---
+
+​	如果您不是同行，那么您可以点击以下文字进入对应目录。
+
+	* [专业基础知识]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/专业基础知识))
+	* [JAVA基础]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/java基础))
+	* [JVM部分](JVM部分)
+	* [前端部分]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/前端部分))
+	* [后端部分]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/后端部分))
+	* [开发理论]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/开发理论))
+	* [个人感悟和思考]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/个人感悟思考))
+	* [算法练习题]([https://github.com/fogcoding/FogLibrary/tree/master/md_file/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/java%E5%9F%BA%E7%A1%80](https://github.com/fogcoding/FogLibrary/tree/master/md_file/博客文章/算法题练习))
+
+
+
+
+
+
+
+
 
