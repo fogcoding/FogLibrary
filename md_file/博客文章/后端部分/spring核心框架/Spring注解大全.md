@@ -24,7 +24,7 @@
 | @Transactional                  | 声明事务（一般默认配置即可满足要求，当然也可以自定义）       |
 | @Cacheable                      | 声明数据缓存                                                 |
 | @EnableAspectJAutoProxy         | 开启Spring对AspectJ的支持                                    |
-| @Value                          | 值得注入。经常与Sping EL表达式语言一起使用，注入普通字符，系统属性，表达式运算结果，其他Bean的属性，文件内容，网址请求内容，配置文件属性值等等 |
+| @Value                          | 值的注入。经常与Sping EL表达式语言一起使用，注入普通字符，系统属性，表达式运算结果，其他Bean的属性，文件内容，网址请求内容，配置文件属性值等等 |
 | @PropertySource                 | 指定文件地址。提供了一种方便的、声明性的机制，用于向Spring的环境添加PropertySource。与@configuration类一起使用。 |
 | @PostConstruct                  | 标注在方法上，该方法在构造函数执行完成之后执行。             |
 | @PreDestroy                     | 标注在方法上，该方法在对象销毁之前执行。                     |

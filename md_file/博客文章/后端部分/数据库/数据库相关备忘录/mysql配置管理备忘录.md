@@ -107,6 +107,22 @@ alter table table_name change column_name_old column_name_new text;
 -- 修改一列字段的类型
 alter table table_name modify column_name varchar(10);
 
+-- 查看数据库的编码类型
+show variables like 'character_set_database';
+
+-- 查看表的编码类型
+show create table table_name;
+
+-- 查看某个库的某个表的某个字段的编码类型
+SELECT 
+	table_schema, table_name, character_set_name 
+FROM 
+	information_schema.columns 
+WHERE 
+	table_schema = "db_name" 
+	AND table_name = "table_name" 
+	AND column_name = "column_name";
+
 -- 修改表的编码类型
 ALTER TABLE table_name DEFAULT CHARACTER SET utf8;
 
@@ -142,9 +158,6 @@ on delete cascade;
 -- 删除外键约束
 alter table table_name drop foreign key column_name;     	## 未命名的外键约束默认是列名
 alter table table_name drop foreign key foreign_key_name;    ## 删除对应名称的外键约束
-
-
-
 
 
 ```
@@ -402,4 +415,8 @@ log_timestamps=system
 #show_compatibility_56=on
 # 从mysql5.7.6开始information_schema.global_status已经开始被舍弃，为了兼容性，此时需要打开 show_compatibility_56
 ```
+
+
+
+
 
