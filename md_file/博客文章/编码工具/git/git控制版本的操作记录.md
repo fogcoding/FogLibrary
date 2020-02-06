@@ -68,6 +68,22 @@ git config --list
 
 git fetch remote_name remote_branch_name:local_branch_name
 
+-- 一次拉取所有远程仓库的分支到本地，再创建本地的对应分支
+git init 
+git remote add remote_name xxx.git
+git pull -all
+-- 查看远程分支
+git branch -r
+-- 创建本地分支并切换到对应分支且对应远程分支
+git checkout -b local_branch_name remote_name/remote_branch_name
+
+
+
+
+
+
+
+
 
 
 
