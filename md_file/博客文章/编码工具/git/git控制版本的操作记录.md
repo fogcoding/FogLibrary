@@ -84,8 +84,5 @@ git checkout -b local_branch_name remote_name/remote_branch_name
 
 
 
-
-
-
 ```
 
