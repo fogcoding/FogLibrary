@@ -211,6 +211,36 @@ A对于E相当于有多重依赖，我们在排除对E的依赖时，只需要�
 </dependency>
 ```
 
+
+
+## 如何配置本地jar包引用
+
+```xml
+<dependency>
+  <groupId>sample.ProjectB</groupId>
+  <artifactId>Project-B</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <scope>system</scope>
+  <systemPath>${basedir}/lib/xxx.jar</systemPath>
+</dependency>
+```
+
+
+
+## 定向下载某一个jar包
+
+```properties
+install-file -Dfile=c:/db2jcc.jar -DgroupId=db2 -DartifactId=db2jcc -Dversion=1.0  -Dpackaging=db2jcc-1.0.jar
+```
+
+
+
+## 指定编译使用得本地仓库路径
+
+```properties
+mvn package -Dmaven.repo.local=C:\Users\Administrator\.m2\repository -Dmaven.test.skip=true
+```
+
 # 五、Maven插件机制
 
 ## 1. Maven默认插件
@@ -867,6 +897,19 @@ activeByDefault=true代表如果不指定某个固定id的profile，那么就使
 以上配置完成后，再通过`mvn package -Pdev`或`mvn package -Preelase`打包后，`${profiles.active}<`占位符就被替换为`dev`或`release`
 
 # 七、Maven 变量
+
+```properties
+Maven内置变量说明：
+
+${basedir} 项目根目录
+${project.build.directory} 构建目录，缺省为target
+${project.build.outputDirectory} 构建过程输出目录，缺省为target/classes
+${project.build.finalName} 产出物名称，缺省为${project.artifactId}-${project.version}
+${project.packaging} 打包类型，缺省为jar
+${project.xxx} 当前pom文件的任意节点的内容
+```
+
+
 
 ## 1. 内置属性
 

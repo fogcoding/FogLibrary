@@ -4,6 +4,10 @@
 
 ​	https://segmentfault.com/a/1190000015077021
 
+​	https://www.cnblogs.com/heyanan/p/10328653.html 配置三种仓库
+
+
+
 
 
 ### 核心问题：
