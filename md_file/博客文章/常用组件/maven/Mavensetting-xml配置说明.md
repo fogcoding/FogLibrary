@@ -44,8 +44,6 @@
 
 
 
-
-
 #### setting.xml的配置
 
 ```xml
