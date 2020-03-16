@@ -2,6 +2,12 @@
 
 
 
+# 备份的恢复会默认删掉原来的表，所以如果原来的数据还需要存在，千万不能用备份恢复的方法。
+
+
+
+
+
 ### 备份与备份文件恢复
 
 #### 获取备份
@@ -14,13 +20,13 @@ mysqldump -u root -p --all-databases>/home/fogcoding/xxx.sql
 mysqldump -u root -p --all-databases>/home/fogcoding/xxx.sql
 
 -- 设置备份某个特定的数据库
-mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --database db_name > /home/fogcoding/xxx.sql
+mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --databases db_name > /home/fogcoding/xxx.sql
 
 -- 备份压缩(导出的数据有可能比较大，不好备份到远程，这时候就需要进行压缩)
-mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --database db_name | gzip > /home/fogcoding/X.sql.gz
+mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --databases db_name | gzip > /home/fogcoding/X.sql.gz
 
 -- 备份同个库多个表
-mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --database db_name table1 table2 .... > /home/fogcoding/xxx.sql
+mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --databases db_name --tables table1 table2 .... > /home/fogcoding/xxx.sql
 
 -- 同时备份多个库
 mysqldump -h 127.0.0.1 -P 3306 -u root -p 123456 --databases db_1 db_2 db_3 > /home/fogcoding/xx.sql
