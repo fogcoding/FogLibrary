@@ -54,6 +54,9 @@ git config --global
 -- 针对当前项目生效的配置，覆盖 global 的配置
 git config 
 
+-- 取消生效
+git config --global -unset-all
+
 -- 常用的配置参数
 -- 帐户名
 user.name = your_username

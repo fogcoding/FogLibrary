@@ -3,48 +3,22 @@
 
 
 * clean
-
-  >
-
 * validate
-
-  >
-
 * compile
+* test：测试命令,或执行src/test/java/下junit的测试用例
 
-  >
+* package：将项目打包（jar/war），将打包结果放到项目下的 **target** 目录下
 
-* test
-
-  >测试命令,或执行src/test/java/下junit的测试用例
-
-* package
-
-  >将项目打包（jar/war），将打包结果放到项目下的 **target** 目录下
-
-* verify
-
-  >
-
-* install
-
-  >**1.** 将项目打包（jar/war），将打包结果放到项目下的 **target** 目录下
-  >
-  >**2.** 同时将上述打包结果放到**本地仓库**的相应目录中，供其他项目或模块引用
+* verify：
+* install ： **1.** 将项目打包（jar/war），将打包结果放到项目下的 **target** 目录下 **2.** 同时将上述打包结果放到**本地仓库**的相应目录中，供其他项目或模块引用
 
 * site
 
-  >
-
-* deploy
-
-  >发布命令 将打包的文件发布到远程参考,提供其他人员进行下载依赖 ,一般是发布到公司的私服
+* deploy：发布命令 将打包的文件发布到远程参考,提供其他人员进行下载依赖 ,一般是发布到公司的私服
 
 
 
 ## 参考：https://www.cnblogs.com/endv/p/11204704.html
-
-
 
 
 
@@ -81,8 +55,6 @@ mvn deploy:deploy-file -DgroupId=com.xy.oracle -DartifactId=ojdbc14 -Dversion=10
 
 
 
-
-
 #### 本地有jar包，但是识别不到
 
 ```properties
@@ -100,6 +72,99 @@ maven本地仓库有jar包，maven install还是报错识别不到
 ***.jar>yyy=
 这个yyy就是你当前setting里的mirror的id，告诉maven，这个jar是你亲生的，不要不认了。
 ```
+
+
+
+#### 指定setting文件编译
+
+```properties
+mvn -s "D:\maven\conf\settings-1.xml" clean install -Dmaven.test.skip=true 
+```
+
+
+
+### 简化编译命令
+
+```sql
+-- windows
+-- 新建一个文件,后缀为.bat，内容为：
+mvn -s "d:\maven\conf\settings-1.xml" clean install -Dmaven.test.skip=true 
+goto:EOF
+-- 放到运行目录里，即可简化编译
+
+
+-- linux，原理同上，不过是编写脚本变成了shell
+mvn -s "/sxapp/sxappopt/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.skip=true
+
+-- 通过这样的方式，可以给不同的编译方式设定不同的配置，从而实现各个环境的分离，达到SIT,UAT互相不干扰的效果
+```
+
+
+
+#### 配置deploy到私服
+
+```sql
+-- pom文件设置远程url
+<!-- 这里配置地址，setting配置用户密码 -->
+  <distributionManagement>
+        <repository>
+            <id>deploy</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/fogcoding/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deploy</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/fogcoding/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+-- setting文件设置账户密码
+   <server>
+      <id>deploy</id>
+      <username>admin</username>  
+      <password>admin123</password>  
+    </server>
+
+-- 注：仓库设置为快照版本，那么版本号一定要带SNAPSHOT后缀，否则会报400错误。
+```
+
+
+
+#### 设置拉取私服的代码
+
+```xml
+-- 1.配置setting的镜像
+
+<!-- 如果要拉取私服的代码，需要配置镜像源 -->
+<mirror>  
+    <id>nexus-fogcoding</id>  
+    <name>internal nexus repository</name>  
+    <url>http://localhost:8081/repository/fogcoding/</url>  
+    <mirrorOf>*</mirrorOf>  
+</mirror>  
+	 
+-- 2.配置镜像登录的账号密码
+<server>
+    <id>nexus-fogcoding</id>
+    <username>admin</username>  
+    <password>admin123</password>  
+</server>
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
