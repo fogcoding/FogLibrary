@@ -18,7 +18,20 @@
 
 
 
-## 参考：https://www.cnblogs.com/endv/p/11204704.html
+#### 参考：https://www.cnblogs.com/endv/p/11204704.html
+
+
+
+#### 命令创建mvn项目
+
+```properties
+-- 如果使用默认的settings.xml那么只需要使用下面的命令
+mvn archetype:generate 
+
+-- 如果使用了自定义的settings.xml，可以使用这样的命令
+mvn archetype:generate -s path/setting.xml
+
+```
 
 
 
@@ -83,7 +96,7 @@ mvn -s "D:\maven\conf\settings-1.xml" clean install -Dmaven.test.skip=true
 
 
 
-### 简化编译命令
+#### 简化编译命令
 
 ```sql
 -- windows
@@ -153,6 +166,74 @@ mvn -s "/sxapp/sxappopt/fogcoding/maven/conf/settings-1.xml" clean install -Dmav
 </server>
 
 ```
+
+
+
+#### 设置快照更新策略
+
+方法一：
+
+```xml
+<!-- 这里设置了远程仓库的源 -->
+  <repositories>
+    <repository>
+      <id>fogcoding</id>
+      <name>test</name>
+      <url>http://localhost:8081/repository/fogcoding/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <!--  更新策略就是在这一行  -->
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>fogcoding</id>
+      <name>test</name>
+      <url>http://localhost:8081/repository/fogcoding/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+         <!--  更新策略就是在这一行  -->
+        <updatePolicy>always</updatePolicy>
+      </snapshots>    
+    </pluginRepository>
+```
+
+方法二：
+
+```sql
+-- 通过命令强制更新
+mvn clean install-U
+```
+
+
+
+#### 如何启动激活几种不同的开发环境dev/sit/uat
+
+```
+
+https://www.cnblogs.com/codestory/p/11271016.html
+
+https://www.cnblogs.com/raphael5200/p/6677549.html
+
+-- 理论上来说，可以同时打包很多个环境的生产包
+
+
+
+```
+
+
+
+#### 自动化部署
+
+https://ayayui.gitbooks.io/tutorialspoint-maven/content/book/maven_deployment_automation.html
 
 
 
