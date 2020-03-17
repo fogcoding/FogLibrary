@@ -50,5 +50,33 @@ source /home/fogcoding/xxx.sql
 
 
 
+#### 仅有data目录文件的恢复
+
+```sql
+-- https://www.cnblogs.com/qcfeng/p/6077955.html
+
+-- 删除本地的数据存储，仅保留数据结构
+ALTER TABLE batch DISCARD TABLESPACE;
+
+-- 将原本的.ibd文件移动到现在的文件夹中
+
+-- 由数据结构导入数据
+ALTER TABLE batch IMPORT TABLESPACE;
+
+
+-- 另外还有一个ibdata的文件，如果这个没有丢，则可以直接拷贝即可实现恢复
+
+```
+
+
+
+
+
+
+
+
+
+
+
 ### 日志回滚恢复
 
