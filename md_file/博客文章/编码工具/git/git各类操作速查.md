@@ -89,7 +89,23 @@ git config --global alias.lg "log --graph"
 
 
 
-#### 3.对git工程项目的操作
+#### 3.如何取消设置git config的设置
+
+```sql
+--  法一：git的config一般是隐藏在 .git/config，所以可以去用户目录下去找到对应的文件修改配置
+
+-- 法二：unset 命令解除设置
+git config --global --unset user.name
+
+-- git config --global --edit
+
+```
+
+
+
+
+
+#### 4.对git工程项目的操作
 
 * 初始化项目
 

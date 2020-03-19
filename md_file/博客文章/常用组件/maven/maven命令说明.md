@@ -64,6 +64,12 @@ mvn deploy:deploy-file -DgroupId=sxd.jar -DartifactId=jacob -Dversion=1.18 -Dpac
 
 mvn deploy:deploy-file -DgroupId=com.xy.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=E:\ojdbc14.jar -Durl=http://127.0.0.1:8081/nexus/content/repositories/thirdparty/ -DrepositoryId=thirdparty
 
+-- 注意，不能从本地仓库直接deploy，要在没有关联的目录进行上传，否则会报错
+
+
+-- 以上命令，要配合权限的验证的话，需要在servers中声明，否则会出现授权
+-- 命令一定要输入正确，否则失效都无法排查错误
+
 ```
 
 

@@ -101,14 +101,31 @@ task('fogcoding'){
 #### gradle编译打包
 
 ```sql
+--查看编译选项
+gradle build -x
+
 -- 常规编译
 gradle build
 
+-- 跳过单元测试编译
+gradle build -x test
+
 -- 适应当前项目的编译
 gradlew build
+
+-- 并行编译，大大加快编译速度
+gradle build --parallel
 
 ```
 
 
 
-#### gradle
+#### gradle依赖树
+
+```sql
+-- 直接查看某个模块的依赖
+gradlew module_name:dependencies
+```
+
+
+
