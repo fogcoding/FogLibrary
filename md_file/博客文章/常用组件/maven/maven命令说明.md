@@ -113,7 +113,7 @@ goto:EOF
 
 
 -- linux，原理同上，不过是编写脚本变成了shell
-mvn -s "/sxapp/sxappopt/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.skip=true
+mvn -s "/home/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.skip=true
 
 -- 通过这样的方式，可以给不同的编译方式设定不同的配置，从而实现各个环境的分离，达到SIT,UAT互相不干扰的效果
 ```
