@@ -19,7 +19,7 @@ set LESSCHARSET=utf-8
 
 ```sql
 -- 一次性输出所有的日志，可以直接看到所有的日志
-git --no-pager log
+git --no-pager log -n 3
 ```
 
 

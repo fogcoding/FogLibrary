@@ -241,6 +241,17 @@ git merge current_branch merged_branch
 
 
 
+## 合并毫无关系的两个仓库或者分支
+
+```sql
+-- 拉取非配置分支的代码
+git clone origin1 code
+
+-- 合并无历史关联的配置分支
+git pull origin2 cfg  --allow-unrelated-histories 
+
+```
+
 
 
 

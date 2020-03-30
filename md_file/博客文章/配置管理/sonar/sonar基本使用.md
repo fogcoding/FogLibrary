@@ -754,44 +754,26 @@
   	
   	<!-- 配置sonar指令的参数直接使用sonar扫描代码 -->
   	<profile>
-  
         <id>sonar</id>
-  
         <activation>
-  
           <activeByDefault>true</activeByDefault>
-  
         </activation>
-  
         <properties>
-  
           <sonar.jdbc.url>jdbc:mysql://127.0.0.1:3306/sonar</sonar.jdbc.url>
-  
           <sonar.jdbc.driver>com.mysql.jdbc.Driver</sonar.jdbc.driver>
-  
           <sonar.jdbc.username>admin</sonar.jdbc.username>
-  
           <sonar.jdbc.password>admin</sonar.jdbc.password>
-  
           <!-- SERVER ON A REMOTE HOST -->
-  
           <sonar.host.url>http://127.0.0.1:9000</sonar.host.url>
-          
   		<!-- <sonar.java.binaries>classes/**</sonar.java.binaries> 记录自己的SX操作，既然是mvn项目就不用设置目录，否则设置了不能用mvn！  -->
-  		
   		<sonar.inclusions>src/main/java/**</sonar.inclusions>
-  		
   		<!--配置sonar的扫描路径，适用于非maven项目 -->
   		<sonar.inclusions>src/**</sonar.inclusions>
-  		
   		<sonar.exclusions>src/main/java/com/demo/sap1/**,
               src/main/webapp/static/**       
   		</sonar.exclusions>
-  		
         </properties>
-  
       </profile>
-  	
     </profiles>
   
     <!-- activeProfiles
@@ -805,15 +787,15 @@
   </settings>
   
   ```
-
+  
   配置然后更新setting之后，仅仅需要执行
-
+  
   ```shell
   mvn sonar:sonar
   ```
-
+  
   即可执行sonar的代码扫描
-
+  
 * 插件的安装
 
   中文化插件和PDF报告插件是必须的，网络条件很好的情况下，可以直接去网站的市场下载，但是网速难以下载，则直接去下载对应的jar包，放在extensions目录下，再重启sonar即可生效。

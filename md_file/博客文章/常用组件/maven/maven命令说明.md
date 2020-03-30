@@ -113,7 +113,7 @@ goto:EOF
 
 
 -- linux，原理同上，不过是编写脚本变成了shell
-mvn -s "/sxapp/sxappopt/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.skip=true
+mvn -s "/home/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.skip=true
 
 -- 通过这样的方式，可以给不同的编译方式设定不同的配置，从而实现各个环境的分离，达到SIT,UAT互相不干扰的效果
 ```
@@ -187,6 +187,7 @@ mvn -s "/sxapp/sxappopt/fogcoding/maven/conf/settings-1.xml" clean install -Dmav
       <name>test</name>
       <url>http://localhost:8081/repository/fogcoding/</url>
       <releases>
+        <!-- 这里使设置是否在本仓库拉取代码 -->
         <enabled>true</enabled>
       </releases>
       <snapshots>
@@ -240,6 +241,32 @@ https://www.cnblogs.com/raphael5200/p/6677549.html
 #### 自动化部署
 
 https://ayayui.gitbooks.io/tutorialspoint-maven/content/book/maven_deployment_automation.html
+
+
+
+
+
+#### 取消从maven中央仓库拉取代码
+
+```xml
+<repositories>
+    <repository>
+        <id>central</id>
+        <url>http://host:port/content/groups/public</url>
+    </repository>
+</repositories>
+
+<pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>http://host:port/content/groups/public</url>
+    </pluginRepository>
+</pluginRepositories>
+```
+
+
+
+ref:https://blog.csdn.net/qq_40369435/article/details/96881611?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 
 
 
