@@ -72,6 +72,21 @@ ALTER TABLE batch IMPORT TABLESPACE;
 
 
 
+#### 单表同库备份
+
+```sql
+-- 法1：复制表结构到新表
+create table tb_name_new select * from tb_name_old where 1=2
+
+-- 法2：复制表结构到新表
+create table tb_name_new like tb_name_old 
+
+-- 复制表结构及数据到新表
+create table tb_name_new select * from tb_name_old 
+```
+
+
+
 
 
 

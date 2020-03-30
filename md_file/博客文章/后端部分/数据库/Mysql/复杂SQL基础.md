@@ -58,6 +58,18 @@ FROM SC
 
 
 
+```sql
+-- 一句话总结join -- 摘自博客
+-- left join是以左侧的表为主表，right join是以右侧的表为主表，而inner join是查找两表共有的数据
+-- 但是上面的被喷了，似乎有很大的问题，关键在于笛卡尔积的问题
+
+-- jion 语句示例
+select a.id,b.id from tb_a a join tb_b b on a.id = b.id
+
+```
+
+
+
 
 
 * 联合（union）
@@ -67,7 +79,50 @@ FROM SC
   * 不带重复值 union
   * 带重复值 union all
   
-  
+
+
+
+
+
+
+
+#### 子句嵌套查询
+
+* 一次查询的结果，作为一张表，再次对其进行查询，称之为子句查询。
+
+```sql
+-- 两重查询
+select * from (
+    select * from A where a.comlumn = 'value') as result 
+where result.condition = 'value';
+
+-- 三重查询
+select * from 
+	(select * from 
+     	( select * from A where a.comlumn = 'value') as one
+     where one.comlumn = 'value'
+    ) as two where two.comlumn = 'value';
+
+-- 更多重的，就是自己按照两重的格式 自己网上累加
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

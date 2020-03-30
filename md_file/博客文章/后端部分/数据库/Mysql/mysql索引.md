@@ -42,3 +42,51 @@
 
 一致性和节省存储空间
 
+
+
+#### 索引的建立与删除，修改，更新
+
+```sql
+-- 显示表格的索引信息
+show index from person; \G
+
+-- 建立索引
+alter table table_name add index index_name(column_name); 
+
+-- 删除索引
+drop index index_name on table_name;
+
+```
+
+
+
+#### 常见索引类型的建立与删除
+
+```sql
+-- 创建为唯一索引
+create unique index index_name(column_name) on table_name;
+
+-- 修改表结构新建唯一索引
+alter table table_name add unique index_name(column_name);
+
+-- 新建主键索引
+alter table table_name add primary key (column_name);
+
+-- 新建全文索引
+alter table tb_name add fulltext index_name(column); 
+
+-- 删除索引
+alter table tb_name drop index index_name;
+
+```
+
+
+
+
+
+
+
+
+
+
+

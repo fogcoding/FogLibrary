@@ -56,7 +56,7 @@ UPDATE test_env set system=REPLACE(system,'UAT2_','') where system like 'UAT2_%'
 
 
 
-
+#### MySQL中原来也有流程控制这样的渠道
 
 
 
