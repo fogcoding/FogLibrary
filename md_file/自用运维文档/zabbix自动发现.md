@@ -2,7 +2,7 @@ zabbix自动发现java的监听端口
 
 1.自动发现脚本内容，需要传到对应的agent机器
 
-[sxappopt@uat1bmpifpfn tmp]$  discoverJAVA.sh
+[root@uat1bmpifpfn tmp]$  discoverJAVA.sh
 
 ```shell
 \#!/bin/sh
