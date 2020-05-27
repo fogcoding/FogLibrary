@@ -17,6 +17,10 @@ update project_list p inner join (select _id t_id,date(plan_sit) new from projec
 -- 计算时间差
 -- TIMESTAMPDIFF('[DAY,HOUR,MINUTE,SECOND]',plan_sit,date(now())) from project_list
 
+-- update 配合select 使用
+update A inner join(select id,name from B) c on A.id = c.id set A.name = c.name;
+
+
 
 ```
 
