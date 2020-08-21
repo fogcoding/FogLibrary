@@ -30,3 +30,42 @@
 
 
 
+#### ORACLE实例启动与停止
+
+```shell
+SQL> startup
+
+ORA-01081: 无法启动已在运行的 ORACLE - 请首先关闭它
+
+
+SQL> shutdown immediate
+
+数据库已经关闭。
+
+已经卸载数据库。
+
+ORACLE 例程已经关闭。
+
+SQL> startup nomount
+
+ORACLE 例程已经启动。
+
+
+
+Total System Global Area 1586708480 bytes
+
+Fixed Size     2213736 bytes
+
+Variable Size   922749080 bytes
+
+Database Buffers   654311424 bytes
+
+Redo Buffers     7434240 bytes
+
+SQL> 
+```
+
+
+
+
+

@@ -129,3 +129,17 @@ git log -v >d:\log.csv
 
 
 
+#### 根据commit-id查看历史文件内容
+
+```
+-- 获取commit-id
+git log --format="%H" file_name
+
+-- 根据commit-id获取当时的文件状态(--no-pager参数为了解决window编码的问题)
+git --no-pager show xxxxxxx:file_path/file_name
+
+
+```
+
+
+
