@@ -24,3 +24,9 @@ git --no-pager log -n 3
 
 
 
+一次性解决问题的办法
+
+```
+git config --global core.pager more
+```
+

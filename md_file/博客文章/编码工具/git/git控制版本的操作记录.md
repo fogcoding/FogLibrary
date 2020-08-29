@@ -78,8 +78,14 @@ git branch -r
 git checkout -b local_branch_name remote_name/remote_branch_name
 
 
+-- 舍弃本地所有修改，清空修改记录
+git checkout -- *
 
+-- 舍弃某个特定文件的修改
+git checkout -- file_name
 
+-- 在本地有变动又没有提交时强制切换分支
+git checkout branch_name -f
 
 
 

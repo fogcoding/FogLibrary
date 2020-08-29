@@ -17,6 +17,16 @@
 
 -- 用户操作权限
 
+-- 查看用户下所有对象
+select * from user_objects;
+select * from dba_objects;
+
+-- 查询系统所有的权限
+select * from system_privilege_map;
+
+
+
+
 ```
 
 

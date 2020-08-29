@@ -63,7 +63,6 @@ ALTER TABLE batch DISCARD TABLESPACE;
 -- 由数据结构导入数据
 ALTER TABLE batch IMPORT TABLESPACE;
 
-
 -- 另外还有一个ibdata的文件，如果这个没有丢，则可以直接拷贝即可实现恢复
 
 ```
@@ -88,6 +87,28 @@ create table tb_name_new select * from tb_name_old
 
 
 
+
+#### 压缩备份恢复
+
+```sql
+-- mysqldump 备份并压缩sql文件
+
+mysqldump -h主机ip -u用户名 -p密码（也可不输入） 数据库名   | gzip > 压缩后文件位置/xxx_backupfile.sql.gz
+
+
+-- mysql直接用压缩文件恢复(windows需要安装gunzip软件)
+
+-- 方法一（linux无障碍运行）：
+gunzip < xxx_backupfile.sql.gz | mysql -u用户名 -p密码（也可不输入） 数据库名
+
+-- 方法二（windows下的变通）：
+-- 解压时提示unknown suffix -- ignored，是因为直接解压文件是默认解压.gz文件，需要文件后缀是.gz
+-- 但mysql的备份可以设置 -c 输出到标准输出，然后管道命令到mysql执行，也可以-c 然后定向到某个txt文件
+gzip -d d:\\zip1.gz -c | mysql -u root -p -P3307
+
+
+
+```
 
 
 
