@@ -307,7 +307,7 @@ curl -b 'foo=bar' https://taobao.com
 curl -b 'foo1=bar' -b 'foo2=baz' https://taobao.com
 # 上面命令发送两个 Cookie。
 
-```shell
+​```shell
 curl -b cookies.txt https://www.taobao.com
 # 上面命令读取本地文件 cookies.txt，里面是服务器设置的 Cookie（参见-c参数），将其发送到服务器。
 ```
