@@ -26,3 +26,14 @@ update A inner join(select id,name from B) c on A.id = c.id set A.name = c.name;
 
 
 
+#### group by一列来统计数据
+
+```sql
+-- 两个select语句的结果想要结合起来，需要在第一个select 语句前加一次select * from ，以表示从临时表查询时做结合操作 
+SELECT
+	* 
+FROM
+	( SELECT xqid FROM season1 s1 GROUP BY xqid ) s1
+	LEFT JOIN season1 s2 ON s1.xqid = s2.xqid;
+```
+
