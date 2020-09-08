@@ -213,6 +213,13 @@ tar -zxvf /opt/soft/test/log.tar.gz
 
 ```shell
 tar -zxvf /opt/soft/test/log30.tar.gz log2013.log
+
+app.tar.gz  # 结构如下
+app1/1.log
+app2/2.log
+app3/3.log
+# 解压指定目录
+tar -zxvf app.tar.gz app1
 ```
 
 我可以透过`tar -ztvf`来查阅 tar 包内的文件名称，如果单只要一个文件，就可以透过这个方式来解压部分文件！
