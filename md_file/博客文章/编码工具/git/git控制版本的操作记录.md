@@ -88,7 +88,5 @@ git checkout -- file_name
 git checkout branch_name -f
 
 
-
-
 ```
 
