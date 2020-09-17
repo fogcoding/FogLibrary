@@ -103,5 +103,43 @@ C:\Users\notes>java -help
 
 
 
+#### JAVA启动参数的位置与效果
+
+```powershell
+java -jar 参数前后位置说明
+springboot项目启动的时候可以直接使用java -jar xxx.jar这样。下面说说参数的一些讲究
+
+1.-DpropName=propValue的形式携带，要放在-jar参数前面
+
+　　eg:java -Dxxx=test -DprocessType=1 -jar xxx.jar
+
+　　取值：System.getProperty("propName")
+
+2.参数直接跟在命令后面
+
+　　eg:java -jar xxx.jar processType=1 processType2=2
+
+　　取值：参数就是jar包里主启动类中main方法的args参数，按顺序来
+
+3.springboot的方式，--key=value方式
+
+　　eg:java -jar xxx.jar --xxx=test
+
+　　取值：spring的@value("${xxx}")
+```
+
+
+
+#### JDK自带调试命令
+
+| 命令     | 描述                             |
+| -------- | -------------------------------- |
+| jdb      | 命令行调试工具                   |
+| jps      | 列出所有Java进程的PID            |
+| jstack   | 列出虚拟机进程的所有线程运行状态 |
+| jmap     | 列出堆内存上的对象状态           |
+| jstat    | 记录虚拟机的运行状态，监控性能   |
+| jconsole | 虚拟机性能/状态检查可视化工具    |
+
 
 
