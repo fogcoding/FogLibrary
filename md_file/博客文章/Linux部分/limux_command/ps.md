@@ -102,6 +102,7 @@ ps -e -o pid,uname=USERNAME,pcpu=CPU_USAGE,pmem,comm # 重定义标签
 ps -e -o pid,comm,etime # 显示进程运行的时间
 ps -aux | grep named # 查看named进程详细信息
 ps -o command -p 91730 | sed -n 2p # 通过进程id获取服务名称
+ps aux --sort -rss | head -10 # 查看内存占前十的进程命令
 ```
 
 将目前属于您自己这次登入的 PID 与相关信息列示出来
