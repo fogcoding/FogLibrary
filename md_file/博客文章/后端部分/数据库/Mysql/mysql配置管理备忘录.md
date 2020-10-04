@@ -426,3 +426,31 @@ log_timestamps=system
 
 
 
+#### binlog删除方法
+
+```sql
+-- 1、删除指定时间以前的日志索引中binlog日志文件:
+PURGE MASTER LOGS BEFORE '2019-03-11 00:00:00'; 
+
+-- 2、删除指定日志文件的日志索引中binlog日志文件：
+PURGE MASTER LOGS TO 'mysql-bin.000001'; 
+
+-- 3、清除指定天数以前的日志索引中binlog日志文件：
+PURGE MASTER LOGS BEFORE DATE_SUB( NOW( ), INTERVAL 3 DAY); 
+
+
+-- 4.自动删除
+-- 通过设置binlog多少天过期，使系统自动删除binlog文件
+mysql> show variables like 'expire_logs_days'; 
++------------------+-------+ 
+| Variable_name  | Value | 
++------------------+-------+ 
+| expire_logs_days |   0  | 
++------------------+-------+ 
+mysql> set global expire_logs_days = 30;   
+
+
+```
+
+
+

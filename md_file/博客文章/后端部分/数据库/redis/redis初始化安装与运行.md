@@ -48,7 +48,7 @@ redis-cli
 
 ```shell
 ## 环境准备,安装相关基础依赖make,gcc,tcl
-apt-get install make,gcc.ctl
+apt-get install make,gcc,tcl
 
 ## CD到解压目录执行命令
 make & make install
