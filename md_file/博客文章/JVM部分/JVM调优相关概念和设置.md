@@ -1,5 +1,19 @@
 ## JVM的调优
 
+ref:  官方文档  https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.html
+
+#### 参数示意图
+
+![](.\images\JVM内存参数示意图1.jpg)
+
+
+
+![](.\images\JVM内存参数示意图2.png)
+
+
+
+
+
 
 ###  常见设置汇总
 ##### 堆设置
