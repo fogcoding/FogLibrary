@@ -2,6 +2,15 @@
 
 
 
+#### 启动远程监控端口
+
+```shell
+java -jar -Djava.rmi.server.hostname=192.168.0.174 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9192 -Dcom.sun.management.jmxremote.rmi.port=9193 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false xxx.jar
+
+```
+
+
+
 * jps:查找java进程
 * jinfo -flags pid   查看java进程的参数设置
 * jmap    查看java进程的堆栈信息

@@ -48,9 +48,11 @@ redis-cli
 
 ```shell
 ## 环境准备,安装相关基础依赖make,gcc,tcl
+## 全量依赖包：binutils glibc glibc-kernheaders glibc-common glibc-devel gcc make gcc-c++ libstdc++-devel tcl
 apt-get install make,gcc,tcl
 
 ## CD到解压目录执行命令
+#  问题： jemalloc/jemalloc.h：没有那个文件或目录  ->   执行  make MALLOC=libc
 make & make install
 
 ## 切换到src目录直接执行即可运行redis服务器

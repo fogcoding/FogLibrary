@@ -36,7 +36,7 @@ sudo /opt/gitlab/embedded/bin/runsvdir-start
 -- 修改root密码
 a、 切换目录：cd /opt/gitlab/bin
 
-b、执行 ：sudo gitlab-rails console production 命令 开始初始化密码
+b、执行 ：sudo gitlab-rails console -e production 命令 开始初始化密码
 
 c、在irb(main):001:0> 后面通过 u=User.where(id:1).first 来查找与切换账号（User.all 可以查看所有用户）
 
@@ -49,5 +49,43 @@ f、通过 u.save!进行保存（切记切记 后面的 !）
 g、如果看到上面截图中的true ，恭喜你已经成功了，执行 exit 退出当前设置流程即可。
 
 h、回到gitlab ,可以通过 root/12345678 这一超级管理员账号登录了
+```
+
+
+
+#### 配置邮件服务
+
+```
+安装Postfix以发送通知电子邮件
+--安装命令
+yum install postfix
+
+-- 激活命令
+systemctl enable postfix
+
+-- 启用命令
+systemctl start postfix
+
+-- 启动时如果显示有libmysqlcient.so.18的包缺失
+yum install mysql-libs
+
+
+
+-- 配置邮件信息
+-- 在external_url 'http://192.168.1.107'  下面添加
+gitlab_rails['gitlab_email_from'] = 'zjjszdfq01@126.com'
+gitlab_rails['smtp_enable'] = true
+gitlab_rails['smtp_address'] = "smtp.126.com"
+gitlab_rails['smtp_port'] = 25
+gitlab_rails['smtp_user_name'] = "zjjszdfq01@126.com"
+gitlab_rails['smtp_password'] = "*******"
+gitlab_rails['smtp_domain'] = "126.com"
+gitlab_rails['smtp_authentication'] = "login"
+gitlab_rails['smtp_enable_starttls_auto'] = true
+user['git_user_email'] = "zjjszdfq01@126.com"
+
+
+
+
 ```
 
