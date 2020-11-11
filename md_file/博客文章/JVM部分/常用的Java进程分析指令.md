@@ -5,7 +5,13 @@
 #### 启动远程监控端口
 
 ```shell
+
+-- 普通jar包启动
 java -jar -Djava.rmi.server.hostname=192.168.0.174 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9192 -Dcom.sun.management.jmxremote.rmi.port=9193 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false xxx.jar
+
+
+-- tomcat等容器启动，修改catalina.sh里面的JAVA_OPS设置
+JAVA_OPTS="-Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.port=8099 -Dcom.sun.management.jmxremote.rmi.port=8099 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
 
 ```
 

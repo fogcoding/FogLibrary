@@ -53,9 +53,23 @@ h、回到gitlab ,可以通过 root/12345678 这一超级管理员账号登录�
 
 
 
+#### gitlab的url地址修改
+
+```sql
+-- 找到对应目录
+cd /opt/gitlab/embedded/service/gitlab-rails/config  
+
+-- 修改里面的host配置
+vim gitlab.yml  
+
+-- 然后重启即可
+```
+
+
+
 #### 配置邮件服务
 
-```
+```sql
 安装Postfix以发送通知电子邮件
 --安装命令
 yum install postfix
@@ -83,8 +97,6 @@ gitlab_rails['smtp_domain'] = "126.com"
 gitlab_rails['smtp_authentication'] = "login"
 gitlab_rails['smtp_enable_starttls_auto'] = true
 user['git_user_email'] = "zjjszdfq01@126.com"
-
-
 
 
 ```

@@ -104,7 +104,7 @@ git log HEAD --grep chore(package.json)
 # 安装 CHANGELOG 生成器
 yarn global add standard-version
 
-# 生成文档
+# 生成文档 
 standard-version --first-release
 ```
 

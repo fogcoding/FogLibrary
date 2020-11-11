@@ -95,7 +95,6 @@ create table tb_name_new select * from tb_name_old
 
 mysqldump -h主机ip -u用户名 -p密码（也可不输入） 数据库名   | gzip > 压缩后文件位置/xxx_backupfile.sql.gz
 
-
 -- mysql直接用压缩文件恢复(windows需要安装gunzip软件)
 
 -- 方法一（linux无障碍运行）：

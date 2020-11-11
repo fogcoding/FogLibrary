@@ -186,6 +186,13 @@ protected-mode   yes -> no
 
 
 
+### redis当前状态查看
+
+```
+info
+
+```
+
 
 
 

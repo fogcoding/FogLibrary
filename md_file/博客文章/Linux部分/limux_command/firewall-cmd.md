@@ -15,7 +15,7 @@ firewalld跟iptables比起来至少有两大好处：
 firewalld自身并不具备防火墙的功能，而是和iptables一样需要通过内核的netfilter来实现，也就是说firewalld和 iptables一样，他们的作用都是用于维护规则，而真正使用规则干活的是内核的netfilter，只不过firewalld和iptables的结 构以及使用方法不一样罢了。
 
 **命令格式** 
- 
+
 ```shell
 firewall-cmd [选项 ... ]
 ```
