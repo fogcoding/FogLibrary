@@ -67,6 +67,10 @@ mvn deploy:deploy-file -DgroupId=com.xy.oracle -DartifactId=ojdbc14 -Dversion=10
 -- 同时上传jar和pom文件
 mvn deploy:deploy-file -DgroupId=com.xy.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=E:\ojdbc14.jar -DpomFile=E:\ojdbc14.pom -Durl=http://127.0.0.1:8081/nexus/content/repositories/thirdparty/ -DrepositoryId=thirdparty
 
+-- 以上方法设置了-DrepositoryId=thirdparty，即导致命令的执行需要依赖本地maven的settgings.xml文件里面的配置信息
+-- 直接在url里面写上账户密码，就可以直接让命令执行而不依赖本地配置
+mvn deploy:deploy-file -DgroupId=com.xy.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=E:\ojdbc14.jar -DpomFile=E:\ojdbc14.pom -Durl=http://admin（账号）:admin123（密码）@127.0.0.1:8081/nexus/content/repositories/thirdparty/ 
+
 
 
 -- 注意，不能从本地仓库直接deploy，要在没有关联的目录进行上传，否则会报错
