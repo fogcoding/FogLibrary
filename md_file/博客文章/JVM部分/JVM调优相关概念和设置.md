@@ -14,6 +14,34 @@ ref:  官方文档  https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gc
 
 
 
+20201102更新：
+
+```sql
+-- 首先JVM的GC算法只有那么几种，并且都是针对特定的年代的，整理好
+
+-- 每种GC算法有特定的使用场景和优化参数，对于这个特定参数的设置和摸索是发挥出GC算法性能的关键
+
+-- 需要进行性能优化的场景一般来说会有普适性，他们都有比较典型的最佳实践案例，找出来参考和分析他们为什么这么设置
+
+-- 对于市面上比较典型和经典的书籍需要整理和总结，但是他们并没有说出特定的优化参数和案例，更为有效和关键的信息仍然在少数具有实践经验的人身上和jdk文档中
+
+-- 警醒：不一定更新的G1GC就会比ParallelGC策略要更好，至少经过实践是这样的（也可能是因为参数设置不够匹配导致没有发挥出G1的能力）
+
+
+-- https://blog.csdn.net/qq_33938256/article/details/52502502?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9.channel_param#parallel-scanvenge%E6%94%B6%E9%9B%86%E5%99%A8
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
 ###  常见设置汇总
 ##### 堆设置

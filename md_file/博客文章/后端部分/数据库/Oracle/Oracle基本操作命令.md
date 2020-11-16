@@ -57,7 +57,6 @@ Drop  User user_name cascade;
 alter user user_name quota unlimited on user_tablespace quota unlimited on user_tablespace;
 
 
-
 -- 查看用户下所有对象
 select * from user_objects;
 select * from dba_objects;
@@ -65,7 +64,8 @@ select * from dba_objects;
 -- 查询系统所有的权限
 select * from system_privilege_map;
 
-
+-- 解锁用户
+alter user scott account unlock;
 
 
 ```
@@ -178,7 +178,28 @@ d、shutdown abort
 -- 索引操作
 
 
+
 ```
+
+
+
+#### 数据库锁表问题解决
+
+```
+-- 查看所有存在锁表的对象
+
+-- 查看哪条语句，会话，进程id导致了锁表
+
+-- 杀掉会话释放锁
+
+-- 回滚事务，解除锁
+
+
+```
+
+
+
+
 
 
 
