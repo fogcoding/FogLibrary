@@ -14,6 +14,31 @@ jconsole pid
 
 -- 在VM概要栏可以查看JVM的各项设置和参数
 
+GC日志查看
+可以通过在java命令种加入参数来指定对应的gc类型，打印gc日志信息并输出至文件等策略。
+
+ 
+
+GC的日志是以替换的方式(>)写入的，而不是追加(>>)，如果下次写入到同一个文件中的话，以前的GC内容会被清空。
+
+ 
+对应的参数列表
+
+-XX:+PrintGC 输出GC日志
+-XX:+PrintGCDetails 输出GC的详细日志
+-XX:+PrintGCTimeStamps 输出GC的时间戳（以基准时间的形式）
+-XX:+PrintGCDateStamps 输出GC的时间戳（以日期的形式，如 2013-05-04T21:53:59.234+0800）
+-XX:+PrintHeapAtGC 在进行GC的前后打印出堆的信息
+-Xloggc:../logs/gc.log 日志文件的输出路径
+ 
+ 
+例如:eclipse.ini中配置下面代码启动后会在同一目录下生成gc.log
+-Xloggc:gc.log
+
+-XX:+PrintGCTimeStamps
+
+-XX:+PrintGCDetails
+
 ```
 
 

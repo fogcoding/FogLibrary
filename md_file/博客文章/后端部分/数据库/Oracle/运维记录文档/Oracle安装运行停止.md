@@ -163,6 +163,24 @@ SQL> 
 
 
 
+**命令解释：**
+
+- shutdown命令： 相当于以下三个命令
+
+```
+normal;
+shutdown immediate;
+shutdown abort;
+```
+
+- startup命令： 等于以下三个命令
+
+```
+startup nomount;
+alter database mount;
+alter database open;
+```
+
 
 
 #### 安装运行总结

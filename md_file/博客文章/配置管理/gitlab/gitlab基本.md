@@ -28,6 +28,13 @@ sudo /opt/gitlab/embedded/bin/runsvdir-start
 
 -- 安装完之后会在/var/opt/路径生成gitlab目录，这里是真实使用的各种配置信息路径
 
+
+-- 不能启动gitlab
+-- Solution
+sudo systemctl start gitlab-runsvdir
+-- then
+sudo gitlab-ctl restart
+
 ```
 
 
