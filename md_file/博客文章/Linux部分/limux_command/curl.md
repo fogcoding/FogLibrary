@@ -16,23 +16,22 @@ curl(选项)(参数)
 ### 选项
 
 <table border="0" cellpadding="0" cellspacing="0">
-
 <tbody>
 <tr><td>-a/--append</td><td>上传文件时，附加到目标文件</td></tr>
 <tr><td>-A/--user-agent <string></td><td>设置用户代理发送给服务器</td></tr>
 <tr><td>-anyauth</td><td>可以使用“任何”身份验证方法</td></tr>
 <tr><td>-b/--cookie <name=string/file></td><td>cookie字符串或文件读取位置</td></tr>
-<tr><td>     --basic</td><td>使用HTTP基本验证</td></tr>
+<tr><td>--basic</td><td>使用HTTP基本验证</td></tr>
 <tr><td>-B/--use-ascii</td><td>使用ASCII /文本传输</td></tr>
 <tr><td>-c/--cookie-jar <file></td><td>操作结束后把cookie写入到这个文件中</td></tr>
 <tr><td>-C/--continue-at <offset></td><td>断点续传</td></tr>
 <tr><td>-d/--data <data></td><td>HTTP POST方式传送数据</td></tr>
-<tr><td>     --data-ascii <data></td><td>以ascii的方式post数据</td></tr>
-<tr><td>     --data-binary <data></td><td>以二进制的方式post数据</td></tr>
-<tr><td>     --negotiate</td><td>使用HTTP身份验证</td></tr>
-<tr><td>     --digest</td><td>使用数字身份验证</td></tr>
-<tr><td>     --disable-eprt</td><td>禁止使用EPRT或LPRT</td></tr>
-<tr><td>     --disable-epsv</td><td>禁止使用EPSV</td></tr>
+<tr><td>--data-ascii <data></td><td>以ascii的方式post数据</td></tr>
+<tr><td>--data-binary <data></td><td>以二进制的方式post数据</td></tr>
+<tr><td>--negotiate</td><td>使用HTTP身份验证</td></tr>
+<tr><td>--digest</td><td>使用数字身份验证</td></tr>
+<tr><td>--disable-eprt</td><td>禁止使用EPRT或LPRT</td></tr>
+<tr><td>--disable-epsv</td><td>禁止使用EPSV</td></tr>
 <tr><td>-D/--dump-header <file></td><td>把header信息写入到该文件中</td></tr>
 <tr><td>     --egd-file <file></td><td>为随机数据(SSL)设置EGD socket路径</td></tr>
 <tr><td>     --tcp-nodelay</td><td>使用TCP_NODELAY选项</td></tr>
