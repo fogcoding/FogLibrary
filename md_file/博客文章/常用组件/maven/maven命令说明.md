@@ -31,6 +31,8 @@ mvn archetype:generate
 -- 如果使用了自定义的settings.xml，可以使用这样的命令
 mvn archetype:generate -s path/setting.xml
 
+-pl 连带依赖模块一起构建，可以不用install打包成功，在父目录执行
+mvn -pl module1,module2,module3 -am package -Dmaven.test.skip=true
 ```
 
 
