@@ -130,6 +130,20 @@ springboot项目启动的时候可以直接使用java -jar xxx.jar这样。下�
 
 
 
+#### JAVA编译和启动声明lib目录
+
+```powershell
+
+// 编译时指定lib目录
+javac  DNSCachePrinter.java -Djava.ext.dirs=.
+
+// 执行时指定lib目录
+java -Djava.ext.dirs=xxx  DNSCachePrinter
+
+```
+
+
+
 #### JDK自带调试命令
 
 | 命令     | 描述                             |
