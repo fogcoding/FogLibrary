@@ -193,6 +193,21 @@ alter database open;
 
 4.打开监听服务
 
+```shell
+1.lsnrctl start 
+会看到启动成功的界面;
+
+1.lsnrctl stop 
+停止监听器命令.
+
+1.lsnrctl status 
+查看监听器命令.
+```
+
+
+
+
+
 5.测试连接
 
 

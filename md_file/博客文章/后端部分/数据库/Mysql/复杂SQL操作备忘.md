@@ -37,3 +37,54 @@ FROM
 	LEFT JOIN season1 s2 ON s1.xqid = s2.xqid;
 ```
 
+
+
+#### MySQL 行列互转
+
+```sql
+-- 按月份成列的每行不同数据，整理成分月份为列的结果
+select
+  d.id,
+  sum(if(d.month = 'Jan',d.revenue,null)) as Jan_Revenue,
+  sum(if(d.month = 'Feb',d.revenue,null)) as Feb_Revenue,
+  sum(if(d.month = 'Mar',d.revenue,null)) as Mar_Revenue,
+  sum(if(d.month = 'Apr',d.revenue,null)) as Apr_Revenue,
+  sum(if(d.month = 'May',d.revenue,null)) as May_Revenue,
+  sum(if(d.month = 'Jun',d.revenue,null)) as Jun_Revenue,
+  sum(if(d.month = 'Jul',d.revenue,null)) as Jul_Revenue,
+  sum(if(d.month = 'Aug',d.revenue,null)) as Aug_Revenue,
+  sum(if(d.month = 'Sep',d.revenue,null)) as Sep_Revenue,
+  sum(if(d.month = 'Oct',d.revenue,null)) as Oct_Revenue,
+  sum(if(d.month = 'Nov',d.revenue,null)) as Nov_Revenue,
+  sum(if(d.month = 'Dec',d.revenue,null)) as Dec_Revenue
+from Department d
+  group by d.id;
+
+```
+
+
+
+#### MySQL排名函数
+
+```sql
+
+select *,
+   -- 值相同则排名相同，后一名的排名取前面有多少人的总数
+   rank() over (order by 成绩 desc) as ranking,
+   -- 值相同则排名相同，后一名的排名在上一名基础上加一
+   dense_rank() over (order by 成绩 desc) as dese_rank,
+   -- 值相同排名也可以不同，直接顺序递增而不考虑相同值
+   row_number() over (order by 成绩 desc) as row_num
+from 班级
+
+-- 据说排名函数在8版本的MySQL才有，那么不通过这个排名函数，如何实现排名统计呢？
+
+
+```
+
+
+
+
+
+
+
