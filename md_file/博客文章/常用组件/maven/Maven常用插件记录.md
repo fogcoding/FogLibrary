@@ -377,6 +377,27 @@ maven-assembly-plugin 支持的打包格式有zip、tar、tar.gz (or tgz)、tar.
 
 
 
+#### 注意
+
+
+
+```shell
+## 若是没有在aseembly插件声明的时候，必须在编译的时候使用如下命令来进行
+## 作用就是通过命令的顺序，绑定到mvn执行的生命周期上，否则会出现提示，assembly插件的执行需要绑定在某个生命周期
+## 比如说package上
+mvn clean install assembly:assembly -U 
+
+## 下面这种命令是不行的
+mvn assembly:assembly
+
+## 哪怕是按照先后，顺序执行，先执行package,再执行assembly:assembly
+mvn package -Dmaven.test.skip=true
+mvn assembly:assembly
+
+```
+
+
+
 
 
 

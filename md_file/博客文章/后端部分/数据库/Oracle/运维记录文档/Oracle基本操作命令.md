@@ -47,6 +47,7 @@ GRANT DBA TO reader;  --表示把 dba权限授予给reader用户
 Drop  User user_name cascade;
 
 -- 用户修改密码
+alter user ensemble identified by mahanling123;
 
 -- 用户设置登录地址
 
@@ -156,8 +157,6 @@ d、shutdown abort
    
 */
 
-
-
 ```
 
 
@@ -172,8 +171,14 @@ d、shutdown abort
 -- 新建表
 
 -- 添加字段
+alter table user add (course varchar2(30) default '空' not null);
 
 -- 修改字段
+
+-- 删除字段
+alter table 表名 drop column 字段名；
+
+alter table user drop column course;
 
 -- 索引操作
 
@@ -185,21 +190,21 @@ d、shutdown abort
 
 #### 数据库锁表问题解决
 
-```
+```sql
 -- 查看所有存在锁表的对象
+select * from v$locked_object v , user_objects u ，v$session s where v.object_id = u.object_id and v.session_id = s.sid;
 
 -- 查看哪条语句，会话，进程id导致了锁表
 
 -- 杀掉会话释放锁
+alter system kill session 'sid,serial#';
+e.g
+alter system kill session '29,5497';
 
 -- 回滚事务，解除锁
 
 
 ```
-
-
-
-
 
 
 

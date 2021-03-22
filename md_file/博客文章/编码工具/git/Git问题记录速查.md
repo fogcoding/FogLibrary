@@ -9,3 +9,15 @@
 git config core.longpaths true
 ```
 
+
+
+
+
+####  error: The following untracked working tree files would be overwritten by
+
+```sql
+-- git忽略大小写导致的
+
+git config --add core.ignorecase true
+```
+

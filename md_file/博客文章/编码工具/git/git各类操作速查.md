@@ -170,6 +170,23 @@ git reset --hard HEAD^n
 -- 撤销对某个文件的修改，暂存区有就回到暂存区状态，没有就回到版本库状态
 git checkout file_name
 
+
+-- tag操作
+
+-- 获取所有的tag
+git fetch --all
+
+-- 新建tag
+
+-- 查看所有tag
+
+-- 推送tag
+
+-- 一次性推送所有tag
+git push origin --tags
+
+
+
 ```
 
 

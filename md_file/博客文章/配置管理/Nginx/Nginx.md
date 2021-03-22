@@ -17,6 +17,10 @@ make
 -- 安装
 make install
 
+-- 若是遇到第十行错误 ./auto/options
+在nginx解压的根目录执行./auto/configure --prefix=/xxxxx
+而不是在auto目录下直接执行 ./configure --prefix=/xxxxx
+
 ```
 
 
