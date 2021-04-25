@@ -19,7 +19,6 @@ Oracle/Middleware/user_projects/domains/base_domain/servers/AdminServer/security
 -- 5.重启weblogic服务即可
 
 
-
 ```
 
 
