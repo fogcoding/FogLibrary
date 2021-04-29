@@ -108,3 +108,20 @@ user['git_user_email'] = "zjjszdfq01@126.com"
 
 ```
 
+
+
+
+
+#### 安装时候如果遇到报错
+
+```sql
+
+-- execute[init q] (runit::sysvinit line 28) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+
+-- 即使/var/opt/gitlab/.ssh的所有者和用户组都是git，由于父权限，它也不能到这级目录执行shell命令。即，给 /var/opt/gitlab/目录执行权限：
+
+chmod +x /var/opt/gitlab/
+chmod +x /var/opt/
+chmod +x /var/
+```
+
