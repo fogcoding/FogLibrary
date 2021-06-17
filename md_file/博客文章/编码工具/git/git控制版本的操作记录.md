@@ -84,6 +84,9 @@ git checkout -- *
 -- 舍弃某个特定文件的修改
 git checkout -- file_name
 
+-- 舍弃某个目录的修改
+git checkout -- path/*
+
 -- 在本地有变动又没有提交时强制切换分支
 git checkout branch_name -f
 

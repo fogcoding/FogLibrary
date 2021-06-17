@@ -170,6 +170,8 @@ git reset --hard HEAD^n
 -- 撤销对某个文件的修改，暂存区有就回到暂存区状态，没有就回到版本库状态
 git checkout file_name
 
+-- 撤销对某个文件的提交操作
+git reset HEAD file_name*
 
 -- tag操作
 
