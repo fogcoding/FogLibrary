@@ -19,3 +19,26 @@ vi /etc/profile
 
 
 
+
+
+
+
+#### 无法清理系统日志messages
+
+```shell
+二、解决方法
+
+[root@u05mix02 log]## lsattr messages
+-----a-------e- messages                //查看messages的扩展权限
+-----a---------- messages
+[root@u05mix02 log]## chattr -a messages    //清除a权限
+[root@u05mix02 log]## lsattr messages     //再次查看a权限已经清除
+---------------- messages
+[root@u05mix02 log]## echo /dev/null > messages    //使用echo追加空到messages
+[root@u05mix02 log]## ls -lash messages      //查看messages大小
+4.0K -rw------- 1 root root 2.0K Nov 28 12.58 messages
+[root@u05mix02 log]## chattr +a messages   //谨慎起见再次把a权限加回去
+[root@u05mix02 log]## lsattr messages     //a权限添加成功
+
+```
+

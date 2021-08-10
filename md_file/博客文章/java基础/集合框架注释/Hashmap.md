@@ -23,7 +23,7 @@
             if (p.hash == hash &&
                 ((k = p.key) == key || (key != null && key.equals(k))))
                 //如果原本的位置有值，原来位置的hash值相等，
-                //并且原来位置的key值地址相等，或者新key不为，
+                //并且原来位置的key值地址相等，或者新key不为null，
                 //且调用equals方法比较原来的key结果为true，则先将原位置的值临时保存给e变量
                 //简单来说，就是原位置的key与要插入的key在hash与equals方向上是相等的
                 e = p;
@@ -41,7 +41,7 @@
                         break;
                     }
                     // next指向的元素不为null，其hash值与要插入的hash值相等
-                    //并且原来位置的key值地址相等，或者新key不为，
+                    //并且原来位置的key值地址相等，或者新key不为null，
                 	//且调用equals方法比较原来的key结果为true，则中断循环
                     if (e.hash == hash &&
                         ((k = e.key) == key || (key != null && key.equals(k))))
