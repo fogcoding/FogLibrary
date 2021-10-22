@@ -19,6 +19,12 @@ Oracle/Middleware/user_projects/domains/base_domain/servers/AdminServer/security
 -- 5.重启weblogic服务即可
 
 
+--20211022 补充
+-- 特别注意：username 和  password  相互对应好  一旦填错了就会报账户密码验证不过，启动都会失败
+
+-- 账户密码输入失败五次，则会暂时锁定账户30分钟，即使输入正确也无法进入
+
+
 ```
 
 
