@@ -51,6 +51,26 @@ docker load < file_name
 
 
 
+#### 无法用http登录harbor仓库
+
+```shell
+错误信息:dial tcp xxxxx:port getsocket connection refused
+
+-- 修改配置文件
+vim /etc/sysconfig/docker
+
+OPTIONS中添加 --insecure-registry=10.7.1.216/24
+
+-- 重启docker服务
+systemctl restart docker 
+
+-- 登录私库
+docker login -u admin -p Harbor12345
+
+```
+
+
+
 
 
 
