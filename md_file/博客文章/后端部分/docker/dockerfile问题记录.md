@@ -71,6 +71,29 @@ docker login -u admin -p Harbor12345
 
 
 
+#### 普通用户无法使用docker命令
+
+```shell
+方法1：给与普通用户root权限
+
+方法2：
+-- 添加docker用户组
+groupadd docker
+
+-- 将某个用户添加到docker用户组
+gpasswd -a $user docker
+
+-- 更新docker用户组
+newgrp docker
+
+-- 重启docker
+systemctl restart docker
+
+-- 切换对应用户后，执行docker尝试
+docker ps -a
+
+```
+
 
 
 
