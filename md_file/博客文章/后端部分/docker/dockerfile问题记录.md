@@ -38,7 +38,6 @@ docker run -d -p 8080:8080 容器id
 ## 保存镜像为文件
 docker save -o file_name image_name
 
-
 ## 载入镜像
 docker load --input file_name
 
@@ -66,6 +65,24 @@ systemctl restart docker
 
 -- 登录私库
 docker login -u admin -p Harbor12345
+
+
+-- 2022-01-26
+以上这种配置方式，极其不推荐，来自于破坏了整个配置结构的层级的处理办法
+正确的办法应该是直接去新建/etc/docker/daemon.json
+然后在这个文件中写明
+{
+"insecure-registries":["10.7.1.216/24"]
+}
+
+-- 据沟通交流得知，无法直接默认使用某个私库而越过docker.io的步骤
+
+
+-- 总结：
+1.一般普通的配置写在/etc/docker/daemon.json中，可以考虑使用域名的配置动态调整私服地址
+2./usr/lib/systemd/system/docker.service 配置了基本的环境配置参数
+这里有个问题，docker原始的配置文件和目录是哪些？
+
 
 ```
 
