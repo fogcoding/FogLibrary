@@ -16,6 +16,16 @@
 4.      然后umount ,如不行 umount –f /mnt/nfs强行卸载。
 
 5.      再不行重新启动nfsd，再执行上述命令umount文件系统。
+
+
+
+# 出现IO error 可能是nfs版本问题
+mount -o nfsvers=3  x.x.x.x:/x/x /x/x/x
+mount -o nfsvers=2  x.x.x.x:/x/x /x/x/x
+
+
+
+
 ```
 
 

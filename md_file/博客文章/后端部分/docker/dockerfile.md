@@ -108,7 +108,7 @@ exec执行
 格式：
     CMD ["executable","param1","param2"] (执行可执行文件，优先)
     CMD ["param1","param2"] (设置了ENTRYPOINT，则直接调用ENTRYPOINT添加参数)
-    CMD command param1 param2 (执行shell内部命令)
+    CMD command param1 param2 (执行shell内部命令)	
 示例：
     CMD echo "This is a test." | wc -
     CMD ["/usr/bin/wc","--help"]注： 　　CMD不同于RUN，CMD用于指定在容器启动时所要执行的命令，而RUN用于指定镜像构建时所要执行的命令。

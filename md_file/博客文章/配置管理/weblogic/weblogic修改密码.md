@@ -7,7 +7,7 @@
 -- 1.备份Oracle/Middleware/user_projects/domains/base_domain/security/DefaultAuthenticatorInit.ldift,避免出错
 
 -- 2.cd  D:\Weblogic\Middleware\user_projects\domains\base_domain\security执行
-java -classpath ~/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar weblogic.security.utils.AdminAccount weblogic weblogic .
+java -classpath ~/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar weblogic.security.utils.AdminAccount weblogic weblogic@123 .
 
 -- 3.备份数据目录
 Oracle/Middleware/user_projects/domains/base_domain/servers/AdminServer/data 
