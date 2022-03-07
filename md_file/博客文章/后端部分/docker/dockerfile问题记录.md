@@ -113,5 +113,15 @@ docker ps -a
 
 
 
+#### 使用了expose配置dockerfile仍旧无法访问
+
+```shell
+## 只是设置了暴露端口，而没有设置内外网映射端口的关系
+## 在启动时，需要使用-p 参数设置映射关系
+
+docker run -p 8081:8081 -d image:tag 
+
+```
+
 
 

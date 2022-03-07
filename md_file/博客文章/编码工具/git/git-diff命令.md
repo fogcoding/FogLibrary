@@ -26,3 +26,15 @@ git diff --diff-filter=RMC
 
 
 
+#### 比较文件变动中文乱码
+
+```shell
+-- 执行如下命令，修改core.quotepath参数即可。
+
+git config --global core.quotepath false
+```
+
+
+
+
+
