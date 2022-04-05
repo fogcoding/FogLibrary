@@ -24,3 +24,4 @@ select trx_id,trx_state,trx_mysql_thread_id from INFORMATION_SCHEMA.innodb_trx;
 
 
 
++
