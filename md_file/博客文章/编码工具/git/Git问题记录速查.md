@@ -21,3 +21,11 @@ git config core.longpaths true
 git config --add core.ignorecase true
 ```
 
+
+
+#### 查看每一行文件的提交记录
+
+```sql
+git blame 文件名
+```
+

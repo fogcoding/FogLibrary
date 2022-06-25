@@ -58,6 +58,18 @@ jstack -l pid
 
 
 
+#### 查看class的编译JDK版本
+
+```
+
+## 查看aaaa.class的编译版本
+javap -verbose aaaa
+```
+
+
+
+
+
 #### 堆空间分析
 
 ```powershell

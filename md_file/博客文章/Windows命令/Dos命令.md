@@ -15,6 +15,9 @@ rmdir /s /q path
 -- 查看目录
 dir
 
+## 获取当前目录
+set pwd=%cd%
+
 
 
 
