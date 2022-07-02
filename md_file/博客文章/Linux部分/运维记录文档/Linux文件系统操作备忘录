@@ -10,3 +10,32 @@
 
 
 
+#### message太大无法清空
+
+
+
+```shell
+
+## 现象
+[root@centos log]# echo " " > messages
+-bash: messages: Operation not permitted
+
+
+## 解决
+[root@centos log]# lsattr messages   //查看messages的扩展权限
+-----a---------- messages
+[root@centos log]# chattr -a messages    //清除a权限
+[root@centos log]# lsattr messages     //再次查看a权限已经清除
+---------------- messages
+[root@centos log]# echo "" > messages    //使用echo追加空到messages
+[root@centos log]# ls -lash messages      //查看messages大小
+4.0K -rw------- 1 root root 2.0K Nov 17 09:14 messages
+[root@centos log]# chattr +a messages   //谨慎起见再次把a权限加回去
+[root@centos log]# lsattr messages     //a权限添加成功
+-----a---------- messages
+```
+
+
+
+
+
