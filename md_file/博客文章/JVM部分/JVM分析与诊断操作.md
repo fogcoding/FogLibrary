@@ -53,6 +53,10 @@ jps
 -- 直接打印进程id里面的线程信息
 jstack -l pid
 
+-- 查看gc导致的原因
+
+jstat -gccause pid 10000 (持续多少ms) 10 (输出几次日志)
+
 
 ```
 

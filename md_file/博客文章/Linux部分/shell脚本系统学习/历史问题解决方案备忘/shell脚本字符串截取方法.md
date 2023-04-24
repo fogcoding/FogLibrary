@@ -27,3 +27,4 @@ ${file:5:5}：提取第 5 个字节右边的连续5个字节：/dir2
 ${file/dir/path}：将第一个dir 替换为path：/path1/dir2/dir3/my.file.txt
 ${file//dir/path}：将全部dir 替换为 path：/path1/path2/path3/my.file.txt
 ```
+
