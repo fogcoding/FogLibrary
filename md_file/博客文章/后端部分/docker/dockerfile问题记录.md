@@ -2,6 +2,31 @@
 
 
 
+#### 配置镜像加速
+
+````
+vim /etc/dockerd/daemon.json
+
+{
+"registry-mirrors": [
+"https://kfwkfulq.mirror.aliyuncs.com",
+"https://2lqq34jg.mirror.aliyuncs.com",
+"https://pee6w651.mirror.aliyuncs.com",
+"https://registry.docker-cn.com",
+"http://hub-mirror.c.163.com"
+]
+}
+
+
+## 加载配置
+sudo systemctl daemon-reload
+## 重启
+sudo systemctl restart docker
+
+````
+
+
+
 #### CMD命令不执行
 
 ```shell
@@ -49,8 +74,6 @@ docker load < file_name
 
 
 ```
-
-
 
 
 
@@ -126,6 +149,43 @@ docker ps -a
 docker run -p 8081:8081 -d image:tag 
 
 ```
+
+
+
+#### docker stop 容器没反应
+
+```
+## 当使用stop命令显示up状态，kill又显示不在执行中时
+## 重启docker服务
+systemctl restart docker 
+
+## 重启所有容器
+docker restart $(docker ps -aq)
+
+
+```
+
+
+
+#### 从官方仓库拉取的镜像配置启动命令和环境
+
+```
+
+#### 查看镜像的启动命令
+docker ps -a --no-trunc
+
+#### 修改镜像启动命令
+nvidia-docker run -it images:v1 /bin/sh
+
+
+
+```
+
+
+
+
+
+
 
 
 

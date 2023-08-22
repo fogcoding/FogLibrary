@@ -39,3 +39,23 @@
 
 
 
+#### windows和linux文件结尾换行的差异
+
+```shell
+# window换行末尾/n/r
+# unix /r
+
+## 进入编辑模式后设置文件平台
+vim
+: set fileformat=unix
+wq!
+
+
+
+
+
+
+```
+
+
+
