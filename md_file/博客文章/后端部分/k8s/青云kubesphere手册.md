@@ -20,7 +20,7 @@
 
 #### 搭建心得
 
-```
+```properties
 官方的安装步骤:
 1.确定安装版本后，梳理对应得镜像清单，确认正确得版本号，不能少，也不能错
 2.通过export KKZONE=cn  && ./kk artifact export -m manifest-sample.yaml -o kubesphere.tar.gz命令到处对应的镜像资源
@@ -29,7 +29,7 @@
     curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.3.0/images-list.txt
    2.下载的命令文件，当执行export KKZONE=cn命令后，会尝试从文件系统直接读取，所以缺什么可以直接下什么放在对应目录，镜像也是一样的道理
 3.通过./kk init registry -f config-sample.yaml -a kubesphere.tar.gz和对应的镜像资源初始化私服，再执行create_project_harbor.sh初始化项目名称
-  ps:c
+  ps:
    1.配置文件初始化的时候必须是dockerhub.kubekey.local，且没有账号密码，但是第四步的时候又需要填好账户密码
    2.create_project_harbor.sh脚本后面要加-k （小写k）
 
