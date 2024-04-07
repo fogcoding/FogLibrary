@@ -54,6 +54,15 @@ grant all on 'db_name'@'table_name' to 'user_name'@'localhost';
 -- 授权和root一样的权限
 grant all on *.* to system@'localhost' identified by 'user_fog' with grant option;
 
+## 针对8.0以上的mysql版本，赋权不能一步操作，需要分别执行三步
+#1.创建账户
+create user 'root'@'%' identified by  'password'
+#2.赋予权限，with grant option这个选项表示该用户可以将自己拥有的权限授权给别人
+grant all privileges on *.* to 'root'@'%' with grant option
+#3. 改密码&授权超用户，flush privileges 命令本质上的作用是将当前user和privilige表中的用户信息/权限设置从mysql库(MySQL数据库的内置库)中提取到内存里
+flush privileges;
+
+
 -- 可以授权的权限种类
 /*
 INSERT,SELECT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, 
