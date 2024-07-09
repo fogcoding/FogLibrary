@@ -162,7 +162,6 @@ systemctl restart docker
 ## 重启所有容器
 docker restart $(docker ps -aq)
 
-
 ```
 
 
@@ -177,11 +176,30 @@ docker ps -a --no-trunc
 #### 修改镜像启动命令
 nvidia-docker run -it images:v1 /bin/sh
 
-
-
 ```
 
 
+
+####  镜像容器中，数据编码乱码问题解决
+
+```shell
+## 设置容器内对应的字符编码为utf8
+ENV LC_ALL=zh_CN.utf8
+ENV LANG=zh_CN.utf8
+ENV LANGUAGE=zh_CN.utf8
+RUN localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
+```
+
+
+
+#### docker0网卡删除
+
+```sql
+-- 有时候注册到注册中心的地址会显示172.17.0.1这种明显的虚拟ip地址，可以尝试查看本地的ip清单
+-- 如果来自于docker0 可以清理掉docker0网卡的身份，从而解决地址不正确的问题
+
+sudo ip link delete docker0
+```
 
 
 
