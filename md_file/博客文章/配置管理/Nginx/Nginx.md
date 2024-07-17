@@ -21,6 +21,11 @@ make install
 在nginx解压的根目录执行./auto/configure --prefix=/xxxxx
 而不是在auto目录下直接执行 ./configure --prefix=/xxxxx
 
+-- 若是发现提示libpcre这样的依赖找不到，yum安装又提示已安装
+-- 多是直接从别的机器直接拷贝的制品包，底层依赖有差异导致
+-- 应当从源码开始直接在本机编译安装！！！！！
+
+
 ```
 
 
