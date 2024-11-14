@@ -228,7 +228,7 @@ mvn -s "/home/fogcoding/maven/conf/settings-1.xml" clean install -Dmaven.test.sk
 
 ```sql
 -- 通过命令强制更新
-mvn clean install-U
+mvn clean install -U
 ```
 
 

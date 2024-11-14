@@ -19,6 +19,13 @@ show engines
 create table (...) engine=federated connection='mysql://username:password@hostname:port/database/tablename'
 
 
+## 缺点
+1.表结构必须完全一样
+2.不支持事务
+3.不支持表结构修改操作
+4.删除本地表，远程表不会删除
+5.远程服务器必须是mysql服务器
+
 
 
 ```
