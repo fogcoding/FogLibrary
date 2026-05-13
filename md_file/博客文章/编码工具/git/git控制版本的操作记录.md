@@ -8,34 +8,27 @@
 -- * 配置完使用cmd窗口可以任何目录使用git命令，如果在Android stduio的terminal使用却无法识别，此时重启电脑一下就好了
 
 --  用于提供自己的名字和email地址
-
 * git config --global user.name [name]
 * git config --global user.email []
 
 -- 保存登陆的用户密码，避免每次都要重新输入
-
 git config --global credential.helper store
 
 -- 查看配置信息列表
-
 git config --list
 
 -- 克隆项目
-
  git clone URL
 
 -- 拉取项目变动
-
  git pull res_name 
 
 -- 上传更改
-
  git commit -m "上传说明"
  git push
 
 
 -- 撤销上传（版本回退）
-
  git reset --hard HEAD~N (到退N次提交前)
  git commit 
  git push -f  （强制传送到远程respostiries）
@@ -53,19 +46,16 @@ git config --list
  git push res_name master
 
 -- 添加文件的追踪
-
  git add file_name
  git status    (可以看见文件追踪的变动情况)
  git commit -m "提交说明"   (这一步特别注意，不知道为什么，使用 git commit 是无法生效的，必须按照左边的格式提交)
  git push res_name branch_name 
 
 -- 删除远程分支
-
  git origin --delete branch_name
 
 
 -- 拉取特定分支到本地
-
 git fetch remote_name remote_branch_name:local_branch_name
 
 -- 一次拉取所有远程仓库的分支到本地，再创建本地的对应分支

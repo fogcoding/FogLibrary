@@ -53,7 +53,9 @@ apt-get install make,gcc,tcl
 
 ## CD到解压目录执行命令
 #  问题： jemalloc/jemalloc.h：没有那个文件或目录  ->   执行  make MALLOC=libc
+## make install PREFIX=执行的安装目录
 make & make install
+
 
 ## 切换到src目录直接执行即可运行redis服务器
 ./redis-server
